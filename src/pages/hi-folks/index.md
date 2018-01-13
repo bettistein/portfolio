@@ -1,6 +1,7 @@
 ---
 title: New Runtastic Branding
 date: "2017-11-28T22:40:32.169Z"
+featuredImage: "./thumbnail.jpg"
 ---
 
 Far far away, behind the word mountains, far from the countries Vokalia and

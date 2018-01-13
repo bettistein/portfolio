@@ -1,6 +1,8 @@
 ---
 title: Branding Bodyflow
 date: "2018-01-01T22:12:03.284Z"
+featuredImage: "./thumbnail.jpg"
+
 ---
 
 In August 2017 I had the chance to do a chalk wall at the Berlin headquarter of tandem. Tandem is an app for mobile language exchange with over one million members and 2.500 language combinations.
