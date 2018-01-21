@@ -1,0 +1,36 @@
+.header {
+  width: 100%;
+  height: 50px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: fixed;
+}
+
+.header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  right: 20px;
+  bottom: 10px;
+}
+
+.logo {
+  box-shadow: none;
+  font-size: 2.2rem;
+  font-weight: 700;
+
+  & p {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 20px;
+  }
+}
+
+a.logo:hover {
+  color: black;
+}

@@ -1,7 +1,7 @@
 ---
-title: Some cool project
-date: "2018-01-28T22:40:32.169Z"
-
+title: Runtastic Nutrition Quiz
+date: "2018-11-28T22:40:32.169Z"
+featuredImage: "./thumbnail.jpg"
 ---
 
 Far far away, behind the word mountains, far from the countries Vokalia and

@@ -1,5 +1,5 @@
 ---
-title: Der Salat von vorgestern
+title: Runtastic Branding
 date: "2015-05-06T23:46:37.121Z"
 featuredImage: "./thumbnail.jpg"
 

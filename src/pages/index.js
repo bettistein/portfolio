@@ -2,9 +2,10 @@ import React from "react";
 import Link from "gatsby-link";
 import get from "lodash/get";
 import Img from "gatsby-image";
-
 import Bio from "../components/Bio";
-import { rhythm } from "../utils/typography";
+
+import style from "./index.module.scss";
+
 
 class BlogIndex extends React.Component {
   render() {
@@ -12,19 +13,9 @@ class BlogIndex extends React.Component {
     const posts = get(this, "props.data.allMarkdownRemark.edges");
 
     return (
-      <div>
+      <div className={style.bg}>
         <Bio />
-        <div
-          style={{
-            margin: "0 auto",
-            display: "flex",
-            flexWrap: "wrap",
-            flexDirection: "column",
-            alignItems: "center",
-            maxWidth: 760,
-            height: "100vw",
-          }}
-        >
+        <div className={style.container}>
           {posts.map(({ node }) => {
             const title = get(node, "frontmatter.title") || node.fields.slug;
             const imageSharp = get(
@@ -33,34 +24,17 @@ class BlogIndex extends React.Component {
             );
             console.log(imageSharp);
             return (
-              <div
-                key={node.fields.slug}
-                style={{
-                  maxWidth: 340,
-                  backgroundColor: "white",
-                  marginTop: 30,
-                  padding: 10
-                }}
-              >
-                {imageSharp != null ? <Img sizes={imageSharp.sizes} /> : null}
-                <h3
-                  style={{
-                    marginBottom: rhythm(1 / 4)
-                  }}
-                >
-                  <Link
-                    style={{
-                      boxShadow: "none",
-                      color: "black"
-                    }}
-                    to={node.fields.slug}
-                  >
-                    {title}
-                  </Link>
+              <div className={style.blogbox} key={node.fields.slug}>
+                {imageSharp != null ?
+                  <Img sizes={imageSharp.sizes} /> : null}
+                  <div className={style.textbox}>
+                <h3>
+                  <Link className={style.headline}to={node.fields.slug}>{title}</Link>
                 </h3>
 
                 <small>{node.frontmatter.date}</small>
                 <p dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+                </div>
               </div>
             );
           })}

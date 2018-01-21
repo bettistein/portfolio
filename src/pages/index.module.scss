@@ -1,0 +1,53 @@
+@import "../variables.scss";
+
+.bg {
+  background-color: #C7E8E0;
+}
+
+.container {
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  max-height: 200vw;
+  max-width: 920px;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  @media #{$wide} {
+    max-height: 150vw;
+  }
+
+  @media #{$mobile} {
+    flex-wrap: nowrap;
+  }
+}
+
+.blogbox {
+  background-color: white;
+  margin: 35px 10px 5px 10px;
+  width: 45%;
+
+  @media #{$mobile} {
+    margin: 15px 0px 0px 0px;
+    width: 95%;
+  }
+  @media #{$wide} {
+    width: 45%;
+  }
+}
+
+.headline {
+  box-shadow: none;
+  margin: 0;
+  font-size: 1.8rem;
+  line-height: 2rem;
+}
+
+.textbox {
+  padding: 0px 15px 10px 15px;
+
+& h3 {
+  margin-bottom: 11px;
+}
+}
