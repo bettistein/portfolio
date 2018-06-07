@@ -1,6 +1,7 @@
 import React from 'react'
 
 import HeaderAbout from '../components/HeaderAbout'
+import Footer from "../components/footer"
 
 
 export default () => (
@@ -23,5 +24,7 @@ export default () => (
         </p>
         </p>
       </div>
+        <Footer />
   </div>
+
 );

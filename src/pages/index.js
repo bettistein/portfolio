@@ -1,10 +1,16 @@
+
+// The Blog-Masonry
+
 import React from "react";
 import Link from "gatsby-link";
 import get from "lodash/get";
 import Img from "gatsby-image";
+
 import Bio from "../components/Bio";
+import Footer from "../components/footer"
 
 import style from "./index.module.scss";
+
 
 
 class BlogIndex extends React.Component {
@@ -15,7 +21,7 @@ class BlogIndex extends React.Component {
     return (
       <div className={style.bg}>
         <Bio />
-        <div className={style.container}>
+        <div className={style.masonry}>
           {posts.map(({ node }) => {
             const title = get(node, "frontmatter.title") || node.fields.slug;
             const imageSharp = get(
@@ -24,12 +30,11 @@ class BlogIndex extends React.Component {
             );
             console.log(imageSharp);
             return (
-              <div className={style.blogbox} key={node.fields.slug}>
+              <div className={style.box} key={node.fields.slug}>
                 {imageSharp != null ?
                   <Img sizes={imageSharp.sizes} /> : null}
                   <div className={style.textbox}>
-                <h3>
-                  <Link className={style.headline}to={node.fields.slug}>{title}</Link>
+                <h3>  <Link className={style.headline}to={node.fields.slug}>{title}</Link>
                 </h3>
 
                 <small>{node.frontmatter.date}</small>
@@ -38,8 +43,9 @@ class BlogIndex extends React.Component {
               </div>
             );
           })}
+
         </div>
-        <footer style={{ height: 50 }}> </footer>
+        <Footer />
       </div>
     );
   }
@@ -57,7 +63,6 @@ export const pageQuery = graphql`
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
-          excerpt
           fields {
             slug
           }

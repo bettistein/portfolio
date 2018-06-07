@@ -1,21 +1,71 @@
 @import "../variables.scss";
 
 .root {
-  display: flex;
-  width: 100%;
-  height: 95vh;
-  margin: 0 auto;
-  background-image: url("./bgimage.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
+  height: 100vh;
+  //background-image: url("./bgimage.jpg");
+  background-color: #EBAEB8;
+//  animation: color-transition 15s;
 
-  & > p {
-    color: #ffffff;
-    font-size: 2.3rem;
-    line-height: 2.5rem;
-    text-align: center;
-    max-width: 450px;
-    padding-top: 200px;
-    margin: 0 auto;
+.vertical {
+  color: white;
+  position: absolute;
+  bottom: 90px;
+  left: -40px;
+  transform: rotate(90deg);
+  font-size: 16px;
+  background-image: url(../templates/images/arrow_right.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 35px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+
+
+}
+};
+
+@keyframes color-transition {
+  0% {
+    background-color: #EB8E75;
   }
+  30% { background-color: #84ADCF;
+    }
+
+  60% { background-color: #B3CBA0;
+      }
+
+  100% { background-color: #EBAEB8;
+    }
+  }
+
+
+
+  .textLeft{
+    left: 130px;
+    top: 100px;
+    //background-color: grey;
+    max-width: 450px;
+    position: absolute;
+    color: #ffffff;
+
+  p {
+    font-size: 14px;
+    font-weight: normal;
+    letter-spacing: 0.04em;
+    opacity: 0.8;
+    max-width: 340px;
+  }
+
+  h2 {
+    font-family: 'Ahamono';
+    font-size: 32px;
+    font-weight: bold;
+    font-weight: normal;
+    letter-spacing: 0.02em;
+    color: white;
+  }
+};
+img[src*='@2x'] {
+  zoom:50%;
 }
