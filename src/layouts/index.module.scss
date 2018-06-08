@@ -14,7 +14,7 @@ navigation - "about at the moment"*/
 
 }
 
-ul {
+.navul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -24,23 +24,28 @@ ul {
   color: white;
 
 a {
-  color: white;
+  color: black;
+  opacity: 0.5;
   box-shadow: none;
 }
 a:hover {
-  text-decoration: underline;
+  color: black;
+  opacity: 0.3;
+  transition: 0.3s;
 }
 }
+
 
 a.logo {
   box-shadow: none;
   opacity: 1;
   transition: 0.3s;
 
-  & img {
+  img {
     position: relative;
     left: 30px;
     top: 20px;
+
   }
 }
 

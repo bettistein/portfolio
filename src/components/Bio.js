@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./bio.module.scss";
 import shaka from "./images/shaka.svg";
-
+import headerImg from "./images/header-img.png"
 
 
 class Bio extends React.Component { render() {
@@ -14,6 +14,7 @@ class Bio extends React.Component { render() {
         set up for a digital world.</p>
         <img src={shaka} alt="shaka" width="26" />
         </div>
+        <img src={headerImg} alt="header-img"/>
         <p className={style.vertical}>Discover my Projects</p>
       </div>
     );

@@ -16,10 +16,10 @@ export default ({ children }) => (
     <header className={style.nav}>
 
       <Link className={style.logo} to="/">
-        <img src={logo} alt="logo" width="38" />
+        <img src={logo} alt="logo" width="38"/>
       </Link>
 
-      <ul>
+      <ul className={style.navul}>
         <ListLink className={style.list}to="/about/">About</ListLink>
       </ul>
     </header>

@@ -1,10 +1,10 @@
 @import "../variables.scss";
 
 .root {
-  height: 100vh;
-  //background-image: url("./bgimage.jpg");
-  background-color: #EBAEB8;
-//  animation: color-transition 15s;
+  height: 99vh;
+  background-image: url("./images/header-img.png");
+  background-color: #EB8E75;
+  animation: color-transition 400s;
 
 .vertical {
   color: white;
@@ -26,8 +26,7 @@
 };
 
 @keyframes color-transition {
-  0% {
-    background-color: #EB8E75;
+  0% {background-color: #EB8E75;
   }
   30% { background-color: #84ADCF;
     }
@@ -35,9 +34,9 @@
   60% { background-color: #B3CBA0;
       }
 
-  100% { background-color: #EBAEB8;
+  100% { background-color: #EB8E75;
     }
-  }
+  };
 
 
 
@@ -66,6 +65,6 @@
     color: white;
   }
 };
-img[src*='@2x'] {
-  zoom:50%;
+img {
+
 }

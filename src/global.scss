@@ -14,29 +14,30 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Overpass", sans-serif;
-  color: #494B4E;
+  color: rgba(47,50,54,0.95);
   margin: 0 auto;
-  font-size: 1.035rem;
-  background-color: #F1F1F1;
+  font-size: 16px;
+  background-color: #FCFCFC;
 
 }
 
 h1,
 h2,
 h3 {
-  font-weight: bold;
+  font-weight: 900;
   padding-top: 16px;
   color: #2F3236;
 }
 
 p {
-  line-height: 1.25rem;
+  line-height: 1.55rem;
+  //padding-bottom: 1em;
 
 }
 
 h1 {
-  font-size: 2.4rem;
-  letter-spacing: -0.1rem;
+  font-size: 2.25rem;
+  letter-spacing: 0.02rem;
 }
 
 h2 {
@@ -105,4 +106,11 @@ small {
 
 .gatsby-resp-image-wrapper {
   max-width: 990px;
+}
+
+hr {
+ border: 0;
+ height: 0;
+ border-top: 1px solid rgba(0, 0, 0, 0.1);
+ border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }

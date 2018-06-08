@@ -7,7 +7,7 @@ class Footer extends React.Component { render() {
     return (
 <footer>
 <div className={style.footerwrap}>
-<p><b>©2018 Betty Stein</b> – Vienna AUT</p>
+<p><b>©2018 Betty Stein</b> – Vienna AUT </p>
   <ul>
     <li><Link to="/">Work</Link></li>
     <li>Play</li>
