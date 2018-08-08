@@ -1,0 +1,90 @@
+//previous & next box:
+
+@import "../variables.scss";
+
+.container {
+  max-width: 785px;
+  margin: 0 auto;
+  padding: 1.25rem 1rem;
+}
+
+h1 {
+  max-width: 535px;
+}
+
+p {
+};
+
+
+
+/*......................
+// previous + next navigation
+/.......................*/
+
+
+.navbox {
+  width: 100%;
+  background-color: #18191A;
+
+};
+
+.textbox {
+  max-width: 880px;
+  height: 306px;
+  background-image: url(./images/leaf.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-attachment: fixed;
+  margin: 0 auto;
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media #{$mobile} {
+  padding: 0px 15px 0px 15px;
+  background-size: 90%;
+  height: 200px;
+  }
+};
+
+.work {
+  font-size: 36px;
+  letter-spacing: 0.3em;
+  color: white;
+  font-family: 'Ahamono';
+};
+
+.prev {
+  color: white;
+  box-shadow: none;
+  font-size: 12px;
+  padding-left: 40px;
+  letter-spacing: 0.08em;
+  background-image: url(./images/arrow.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+};
+
+.prev:hover {
+  color: #A9ACB1;
+}
+
+.next {
+  color: white;
+  box-shadow: none;
+  font-size: 12px;
+  padding-right: 40px;
+  letter-spacing: 0.08em;
+  background-image: url(./images/arrow_right.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+
+  @media #{$mobile} {
+  text-align: right;
+  }
+};
+
+.next:hover {
+  color: #A9ACB1;
+}

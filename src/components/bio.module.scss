@@ -1,21 +1,86 @@
 @import "../variables.scss";
 
 .root {
-  display: flex;
-  width: 100%;
   height: 95vh;
-  margin: 0 auto;
-  background-image: url("./bgimage.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: url("./images/header-img.svg");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: 550px;
+  animation: color-transition 90s infinite;
+  //animation-delay: 3s;
 
-  & > p {
-    color: #ffffff;
-    font-size: 2.3rem;
-    line-height: 2.5rem;
-    text-align: center;
-    max-width: 450px;
-    padding-top: 200px;
-    margin: 0 auto;
-  }
+
+
+
+.vertical {
+  color: white;
+  position: absolute;
+  bottom: 90px;
+  left: -40px;
+  transform: rotate(90deg);
+  font-size: 16px;
+  background-image: url(../templates/images/arrow_right.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 35px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+
 }
+};
+
+@keyframes color-transition {
+  0% {background-color: #63668A;
+    background-position: -600px;
+
+  }
+
+  80% { background-color: #CF8B6D;
+
+      }
+
+  90% { background-color: #CB9CA7;
+
+    }
+
+  100% { background-color: #63668A;
+    background-position: 600px;
+
+    }
+  };
+
+
+
+  .textLeft{
+    position: relative;
+    top: 10%;
+    left: 12%;
+    max-width:480px;
+    //background-color: #CB9CA7;
+
+    padding: 30px;
+    text-align: left;
+    color: white;
+    text-shadow: 0 0 60px rgba(0, 0, 0, .2);
+
+
+  p {
+    font-size: 16px;
+    font-weight: normal;
+    letter-spacing: 0.04em;
+  }
+
+  h2 {
+    font-family: 'Ahamono';
+    font-size: 2.6rem;
+    color: white;
+    font-weight: normal;
+
+
+
+  }
+/*  .shaka {
+  margin-top: 18px;
+} */
+};

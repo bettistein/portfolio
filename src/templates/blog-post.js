@@ -5,6 +5,9 @@ import find from "lodash/find";
 import last from "lodash/last";
 import first from "lodash/first";
 import Link from "gatsby-link";
+import style from "./blog-post.module.scss";
+import Footer from "../components/footer"
+
 
 const getNextPage = (edges, slug) => {
   const currentEdge = find(edges, edge => {
@@ -43,31 +46,36 @@ class BlogPostTemplate extends React.Component {
     const nextPage = getNextPage(allBlogEdges, slug);
     const prevPage = getPrevPage(allBlogEdges, slug);
 
-    // defines the blogpost
+
+    /*......................
+    // THE BLOGPOST html
+    /.......................*/
+
     return (
-      <div
-        style={{
-          maxWidth: 650,
-          margin: "0 auto",
-          padding: `1.25rem 1rem`
-        }}
-      >
+    <div>
+      <div className={style.container}>
         <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
         <h1>{post.frontmatter.title}</h1>
-        <p
-          style={{
-            display: "block"
-          }}
-        >
+        <p style={{display: "block"}}>
           {post.frontmatter.date}
         </p>
+
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr style={{}} />
-        <div>
-          <Link to={prevPage}> Previous </Link>
-          <Link to={nextPage}> Next </Link>
+        <hr/>
+
+
         </div>
-      </div>
+        <div className={style.navbox}>
+        <div className={style.textbox}>
+          <Link className={style.prev} to={prevPage}> PREVIOUS PROJECT </Link>
+          <p className={style.work}> WORK </p>
+          <Link className={style.next} to={nextPage}> NEXT PROJECT </Link>
+          </div>
+        </div>
+          <Footer />
+        </div>
+
+
     );
   }
 }

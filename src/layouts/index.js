@@ -2,6 +2,7 @@ import React from "react";
 import Link from "gatsby-link";
 import "../global.scss";
 import style from "./index.module.scss";
+import logo from "./B.svg";
 
 const ListLink = props => (
   <li>
@@ -9,16 +10,17 @@ const ListLink = props => (
   </li>
 );
 
-// Global Stlye & Navigation:
+// Navigation & Logo for all pages:
 export default ({ children }) => (
   <div>
-    <header className={style.header}>
+    <header className={style.nav}>
+
       <Link className={style.logo} to="/">
-        <p>B</p>
+        <img src={logo} alt="logo" width="38"/>
       </Link>
 
-      <ul>
-        <ListLink to="/about/">About</ListLink>
+      <ul className={style.navul}>
+        <ListLink className={style.list}to="/about/">About</ListLink>
       </ul>
     </header>
     {children()}

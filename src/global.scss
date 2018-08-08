@@ -1,4 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,700");
+@import url('https://fonts.googleapis.com/css?family=Overpass');
+
+@font-face {
+font-family: "Ahamono";
+src: url("./files/AHAMONO-Monospaced.otf");
+}
 
 * {
   box-sizing: border-box;
@@ -8,29 +13,31 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: "Josefin Sans", sans-serif;
-  color: #292a2c;
+  font-family: "Overpass", sans-serif;
+  color: rgba(47,50,54,0.95);
   margin: 0 auto;
-  font-size: 1.035rem;
-  background-color: #F1F1F1;
+  font-size: 16px;
+  background-color: #FCFCFC;
 
 }
 
 h1,
 h2,
 h3 {
-  font-weight: 700;
+  font-weight: 900;
   padding-top: 16px;
+  color: #2F3236;
 }
 
 p {
-  line-height: 1.7rem;
-  letter-spacing: -0.015rem;
+  line-height: 1.55rem;
+  //padding-bottom: 1em;
+
 }
 
 h1 {
-  font-size: 3rem;
-  letter-spacing: -0.1rem;
+  font-size: 2.25rem;
+  letter-spacing: 0.02rem;
 }
 
 h2 {
@@ -40,7 +47,6 @@ h2 {
 
 h3 {
   font-size: 1.5rem;
-  letter-spacing: -0.02rem;
 
 }
 
@@ -51,7 +57,7 @@ h6 {
 a {
   color: #161c27;
   text-decoration: none;
-  box-shadow: inset 0 -7px 0 rgba(123, 195, 222, 0.9);
+  box-shadow: inset 0 -5px 0 rgba(123, 195, 222, 0.7);
 }
 
 a:hover {
@@ -96,4 +102,15 @@ small {
   opacity: 0.6;
   font-size: 0.8rem;
   text-transform: uppercase;
+}
+
+.gatsby-resp-image-wrapper {
+  max-width: 990px;
+}
+
+hr {
+ border: 0;
+ height: 0;
+ border-top: 1px solid rgba(0, 0, 0, 0.1);
+ border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }

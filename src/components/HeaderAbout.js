@@ -1,6 +1,6 @@
 import React from "react";
 
-import aboutimg from "./aboutimg.png";
+import aboutimg from "./images/aboutimg.jpg";
 
 class HeaderAbout extends React.Component {
   render() {
@@ -22,7 +22,7 @@ class HeaderAbout extends React.Component {
             fontSize: "2.1rem",
             lineHeight: "2.25rem",
             textAlign: "center",
-            maxWidth: 360,
+            maxWidth: 400,
             paddingTop: 200,
             margin: "0 auto"
           }}
