@@ -1,6 +1,6 @@
 import React from "react";
 
-import aboutimg from "./images/aboutimg.png";
+import aboutimg from "./images/aboutimg.jpg";
 
 class HeaderAbout extends React.Component {
   render() {

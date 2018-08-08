@@ -1,10 +1,16 @@
 @import "../variables.scss";
 
 .root {
-  height: 99vh;
-  background-image: url("./images/header-img.png");
-  background-color: #EB8E75;
-  animation: color-transition 400s;
+  height: 95vh;
+  background-image: url("./images/header-img.svg");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: 550px;
+  animation: color-transition 90s infinite;
+  //animation-delay: 3s;
+
+
+
 
 .vertical {
   color: white;
@@ -21,50 +27,60 @@
   font-weight: bold;
   letter-spacing: 0.05em;
 
-
 }
 };
 
 @keyframes color-transition {
-  0% {background-color: #EB8E75;
-  }
-  30% { background-color: #84ADCF;
-    }
+  0% {background-color: #63668A;
+    background-position: -600px;
 
-  60% { background-color: #B3CBA0;
+  }
+
+  80% { background-color: #CF8B6D;
+
       }
 
-  100% { background-color: #EB8E75;
+  90% { background-color: #CB9CA7;
+
+    }
+
+  100% { background-color: #63668A;
+    background-position: 600px;
+
     }
   };
 
 
 
   .textLeft{
-    left: 130px;
-    top: 100px;
-    //background-color: grey;
-    max-width: 450px;
-    position: absolute;
-    color: #ffffff;
+    position: relative;
+    top: 10%;
+    left: 12%;
+    max-width:480px;
+    //background-color: #CB9CA7;
+
+    padding: 30px;
+    text-align: left;
+    color: white;
+    text-shadow: 0 0 60px rgba(0, 0, 0, .2);
+
 
   p {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: normal;
     letter-spacing: 0.04em;
-    opacity: 0.8;
-    max-width: 340px;
   }
 
   h2 {
     font-family: 'Ahamono';
-    font-size: 32px;
-    font-weight: bold;
-    font-weight: normal;
-    letter-spacing: 0.02em;
+    font-size: 2.6rem;
     color: white;
-  }
-};
-img {
+    font-weight: normal;
 
-}
+
+
+  }
+/*  .shaka {
+  margin-top: 18px;
+} */
+};

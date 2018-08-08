@@ -1,5 +1,5 @@
 ---
-title: Run Wild – T-Shirt Design for a Cooperation between Runtastic and the UN
+title: Run Wild – Illustration for UN Enviroment & Runtastic Corporation
 date: "2018-01-01T22:12:03.284Z"
 featuredImage: "./thumbnail.png"
 

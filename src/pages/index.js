@@ -20,7 +20,9 @@ class BlogIndex extends React.Component {
 
     return (
       <div className={style.bg}>
+
         <Bio />
+        <div className={style.divider}> Work </div>
         <div className={style.masonry}>
           {posts.map(({ node }) => {
             const title = get(node, "frontmatter.title") || node.fields.slug;
