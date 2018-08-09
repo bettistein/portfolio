@@ -10,11 +10,11 @@ class Footer extends React.Component { render() {
 <p><b>©2018 Betty Stein</b> – Vienna AUT </p>
   <ul>
     <li><Link to="/">Work</Link></li>
-    <li>Play</li>
-    <li>News</li>
+
     <li><Link to="/about/">About</Link></li>
   </ul>
-<p><a href="mailto:steinbrecher.bettina@gmail.com"> betty.stein@gmail.com</a></p>
+
+<p><a href="mailto:hi@bettystein.com"> hi@betty.stein.com</a></p>
 </div>
 </footer>
 
