@@ -2,18 +2,17 @@ import React from 'react'
 
 import HeaderAbout from '../components/HeaderAbout'
 import Footer from "../components/footer"
+import style from "./about.module.scss";
+import un from "./images/un.svg"
+import runtastic from "./images/runtastic.svg"
+import adidas from "./images/adidas.svg"
 
 
 export default () => (
 
   <div>
   <HeaderAbout />
-    <div style= {{
-      maxWidth: 575,
-      padding: '1.2rem',
-      margin:'0 auto',
-
-    }}>
+    <div className={style.AboutWrapper} >
       <h1>
         Hey there!
         </h1>
@@ -34,7 +33,13 @@ export default () => (
         </p>
         </p>
 <div>
-  <h3> Brands I worked for: </h3>
+  <h3> Some Brands I had the pleasure to worked with and for: </h3>
+    <img className={style.adidas} src={adidas} alt="adidas logo"/>
+    <img className={style.un} src={un} alt="un environment logo"/>
+    <img className={style.runtastic} src={runtastic} alt="runtastic logo"/>
+
+
+
   </div>
 
       </div>

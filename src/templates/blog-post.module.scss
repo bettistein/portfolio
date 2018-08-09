@@ -61,9 +61,10 @@ p {
   font-size: 12px;
   padding-left: 40px;
   letter-spacing: 0.08em;
-  background-image: url(./images/arrow.png);
-  background-repeat: no-repeat;
-  background-position: left center;
+  //background-image: url(./images/arrow.png);
+  //background-repeat: no-repeat;
+  //ckground-position: left center;
+  background-color: red;
 };
 
 .prev:hover {

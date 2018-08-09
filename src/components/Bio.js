@@ -9,10 +9,10 @@ class Bio extends React.Component { render() {
 
       <div className={style.textLeft}>
         <h2>Design is where science and art break even.</h2>
-        <p>Hi, I'm Betty Stein, and I design digital Brandings,
-        UI/X and fun Illustrations.
-        I help you to create a user-centered visual language –
-        set up for a digital world.</p>
+        <p>Hi, I'm Betty Stein, and I create digital Brand Experiences,
+        UIX and occasionally fun Illustrations.
+        If you need a consistent user-centered visual language for both digital product and brand – hey, I'm your girl!
+        </p>
         <img className={style.shaka} src={shaka} alt="shaka" width="30"/>
         </div>
 
