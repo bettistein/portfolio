@@ -18,7 +18,6 @@ class Bio extends React.Component { render() {
 
         <p className={style.vertical}>Discover my Projects</p>
 
-
       </div>
 
     );
