@@ -8,7 +8,7 @@
   height: 68px;
   background-color: #ffffff;
   align-items: center;
-  font-size: 14px;
+  font-size: 14px !important;
   color: #2C2E32;
   border-top: 1px solid #ECECEC;
 
@@ -23,6 +23,10 @@ ul {
   padding: 0;
   margin: 0;
 
+
+p>b {font-size: 0.2rem !important;}
+
+
 }
 
 li {
@@ -36,5 +40,6 @@ li {
 a {
   box-shadow: none;
   color: #2C2E32;
+
 }
 };

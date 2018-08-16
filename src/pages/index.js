@@ -6,7 +6,7 @@ import Link from "gatsby-link";
 import get from "lodash/get";
 import Img from "gatsby-image";
 
-import Bio from "../components/Bio";
+import Bio from "../components/bio";
 import Footer from "../components/footer"
 
 import style from "./index.module.scss";

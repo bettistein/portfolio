@@ -14,19 +14,19 @@ featuredImage: "./thumbnail.png"
 &nbsp;  
 &nbsp;
 
-xAigner Homeautomation is an Austria based business providing custom tailored solutions for homes and companies to automize buildings. This lets the customer securely and digitally managing the home from remote. This representations unfolds some of the key features of the visual branding, emphasizing the core message of their product.
+Aigner Homeautomation is an Austria based business providing custom tailored solutions for homes and companies to automize buildings. This lets the customer securely and digitally managing the home from remote. This representations unfolds some of the key features of the visual branding, emphasizing the core message of their product.
 
 
-![](./visitenkarte.jpg)
+![Visitenkart](./visitenkarte.jpg)
 
 ![Shirts](./homeauto3.jpg)
 
-![](./tasse.jpg)
+![Tasse](./tasse.jpg)
 
-![](./logo_einzeln.jpg)
+![Logo](./logo_einzeln.jpg)
 
 &nbsp;  
 &nbsp;
 
 Here are also some draft versions, which didn't make it to the final design:
-![](./alternative.jpg)
+![LogoAlternativen](./alternative.jpg)

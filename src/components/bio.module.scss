@@ -32,21 +32,15 @@
 
 @keyframes color-transition {
   0% {background-color: #63668A;
-    background-position: -600px;
-
   }
 
   80% { background-color: #CF8B6D;
-
       }
 
   90% { background-color: #CB9CA7;
-
     }
 
   100% { background-color: #63668A;
-    background-position: 600px;
-
     }
   };
 
@@ -70,14 +64,15 @@
       }
       @media #{$wide} {
         max-width: 550px;
+}
+
+    p {
+      font-weight: 400;
+      letter-spacing: 0.04em;
         }
 }
 
-  p {
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 0.04em;
-  }
+
 
 
   h2 {

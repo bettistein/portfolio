@@ -4,12 +4,20 @@
   background-color: #F9FAFA;
 }
 
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 /* The Masonry Container for all screen sizes: */
 .masonry {
   column-count: 2;
   column-gap: 2em;
   max-width: 850px;
   margin: 1.5em auto;
+
 
   @media #{$wide} {
     column-count: 3;
@@ -44,6 +52,12 @@ img {
 
   @media #{$mobile} {
     padding: 0;
+  }
+
+  h3 {
+    padding-top: 10px;
+    margin: 0;
+    line-height: 1em;
   }
 }
 
