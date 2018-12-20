@@ -2,10 +2,10 @@ const autoprefixer = require("autoprefixer");
 
 module.exports = {
   siteMetadata: {
-    title: "Betty Stein",
+    title: "Studio Betty Stein",
     author: "Bettina Steinbrecher",
-    description: "My personal portfolio.",
-    siteUrl: "https://gatsbyjs.github.io/gatsby-starter-blog/"
+    description: "Graphic Design portfolio of Bettina Steinbrecher. ",
+    siteUrl: "https://bettystein.com"
   },
   pathPrefix: "/gatsby-starter-blog",
   plugins: [
