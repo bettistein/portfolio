@@ -15,10 +15,10 @@ module.exports = {
   layout: () => require('./layouts').default,
   paths: {
     '/': () => require('./pages/frontpage').default,
-    'work/aigner': () => mdxPage('./pages/work/aigner.mdx'),
-    'work/run-wild': () => mdxPage('./pages/work/run-wild.mdx'),
-    'work/runtastic-webconcept': () => mdxPage('./pages/work/runtastic-webconcept.mdx'),
-    'work/tictactoe': () => mdxPage('./pages/work/tictactoe.mdx'),
+    'work/aigner': () => mdxPage(require('./pages/work/aigner.mdx')),
+    'work/run-wild': () => mdxPage(require('./pages/work/run-wild.mdx')),
+    'work/runtastic-webconcept': () => mdxPage(require('./pages/work/runtastic-webconcept.mdx')),
+    'work/tictactoe': () => mdxPage(require('./pages/work/tictactoe.mdx')),
   },
 }
 
@@ -42,8 +42,7 @@ function cleanBlogPath(resourcePath) {
  * as a workaround. This object will be consumed by Antwar
  * and by our registered layout.
  */
-function mdxPage(filepath) {
-  const page = require('./pages/work/aigner.mdx')
+function mdxPage(page) {
   const ret = page.default
   const frontMatter = page.frontMatter
 
