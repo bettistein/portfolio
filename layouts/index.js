@@ -23,10 +23,9 @@ const SiteBody = (props, ctx) => {
   }
 
   const MdxComponent = page.file
-  const frontMatter = page.file.frontMatter
 
   return (
-    <Wrapper>
+    <Wrapper meta={page.file.meta}>
       <MdxComponent />
     </Wrapper>
   )
