@@ -1,5 +1,4 @@
 const path = require('path')
-const page = require('./utils/page')
 const _ = require('lodash')
 
 module.exports = {
@@ -15,6 +14,7 @@ module.exports = {
   layout: () => require('./layouts').default,
   paths: {
     '/': () => require('./pages/frontpage').default,
+    'about': () => mdxPage(require('./pages/about.mdx')),
     'work/aigner': () => mdxPage(require('./pages/work/aigner.mdx')),
     'work/run-wild': () => mdxPage(require('./pages/work/run-wild.mdx')),
     'work/runtastic-webconcept': () => mdxPage(require('./pages/work/runtastic-webconcept.mdx')),
