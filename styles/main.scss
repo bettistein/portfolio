@@ -1,0 +1,12 @@
+body {
+}
+
+
+.card {
+  width: 5rem;
+
+  & > img {
+    width: 10rem;
+  }
+}
+
