@@ -71,3 +71,4 @@ build
 **/*.re.js
 lib/
 .vscode/
+.cache/
