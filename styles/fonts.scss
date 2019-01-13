@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Apercu';
+    src: url('../assets/fonts/ApercuRegular.ttf');
+  }
+
+
+body {
+    color: #252123;
+    font-family: "Apercu", Arial, Helvetica, sans-serif;
+
+}
+
+
+h1 {
+    font-size: 58px;
+    font-weight: 400;
+}
+
+ul, li {
+    display: inline;
+    list-style: none;
+}
+
+a, ul, li {
+    color: #252123;
+    opacity: 0.6;
+}

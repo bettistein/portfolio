@@ -1,16 +1,4 @@
-# [@ryyppy/antwar-default](https://github.com/ryyppy/antwar-default) Project
-
-This is an opinionated antwar boilerplate.
-
-Some highlights on the configuration:
-- Manual route mapping w/ Reason (no directory / filename magic)
-- Tailwind
-- PostCSS
-- Reason & ReasonReact
-- MDX
-- Webpack
-- HtmlWebpackPlugin
-- Netlify setup script
+# Portfolio
 
 ## How to use
 
@@ -20,20 +8,10 @@ Some highlights on the configuration:
 npm install
 ```
 
-**BuckleScript related tasks:**
+**Start development:**
 
 ```
-# Build Reason sources
-npm run bs:build
-
-# Run in watch mode
-npm run bs:watch
-```
-
-**Antwar related tasks:**
-
-```
-# Start server for development
+# Start server for development (open localhost:3000 after successful start)
 npm start
 
 # Build the website in production mode

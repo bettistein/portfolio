@@ -1,6 +1,10 @@
-body {
-}
+@import "./fonts.scss";
 
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
 .card {
   width: 5rem;
@@ -10,3 +14,37 @@ body {
   }
 }
 
+.lpheader {
+  position: relative;
+  height: 100vh;
+  margin-bottom: 50px;
+
+  background-color: #F5F3F4;
+  outline: 25px solid white;
+  outline-offset: -25px;
+
+  .content {
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 112px;;
+    margin-right: 5%;
+    max-width: 780px;
+  }
+
+}
+
+.nav {
+  position: absolute;
+  margin: 88px 0px 0px 114px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin-right: 112px;
+
+.logo {
+  font-size: 24px;
+  color: #252123;
+  opacity: 0.4;
+}
+}
