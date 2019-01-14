@@ -1,4 +1,5 @@
 @import "./fonts.scss";
+@import "./index.scss";
 
 body {
   box-sizing: border-box;
@@ -16,10 +17,10 @@ body {
 .card {
   position: relative;
   width: 380px;
-  height: 490px;
+  height: 503px;
   max-width: 900px;
   margin: 20px;
-  background-color: #F5F3F4;
+  //background-color: #F5F3F4;
   margin-bottom: 90px;
 
   
@@ -28,9 +29,9 @@ body {
   }
   & > p {
     color: #252123;
-    opacity: 0.6;
-    font-size: 16px;
-    bottom: 0;
+    opacity: 0.4;
+    font-size: 14px;
+    bottom: -20px;
     position: absolute;
   }
   

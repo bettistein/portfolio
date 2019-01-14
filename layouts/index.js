@@ -22,6 +22,8 @@ const SiteBody = (props, ctx) => {
     return <Wrapper meta={page.file.meta}>{props.children}</Wrapper>
   }
 
+  
+
   const MdxComponent = page.file
 
   return (

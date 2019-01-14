@@ -23,11 +23,11 @@ const Header = props => {
 }
 
 const Card = props => {
-  const { thumbnail, title } = props
+  const { thumbnail, title, href } = props
   return (
     <div className="card">
       <img src={thumbnail} />
-      <p>{title}</p>
+      <p><a href={href}> {title}</a></p>
     </div>
   )
 }
@@ -52,8 +52,8 @@ const Frontpage = () => {
       <Header />
       <div className="content">
       {workFrontMatters.map((frontMatter, i) => {
-        const { thumbnail, title } = frontMatter
-        return <Card key={i} thumbnail={thumbnail} title={title} />
+        const { thumbnail, title, href } = frontMatter
+        return <Card key={i} thumbnail={thumbnail} title={title} href={href} />
       })}</div>
       <Footer />
     </div>
