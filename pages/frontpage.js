@@ -1,15 +1,7 @@
 import React from 'react'
 import { workFrontMatters } from '../data'
 
-const Card = props => {
-  const { thumbnail, title } = props
-  return (
-    <div className="card">
-      <img src={thumbnail} />
-      {title}
-    </div>
-  )
-}
+
 
 const Header = props => {
   return (
@@ -22,7 +14,7 @@ const Header = props => {
 
         </li>
       </div>
-      <div className="content">
+      <div className="headercontent">
        <h1>Visual Designer, passionately crafting identities and user interfaces. Art Director. Cat lover.</h1>
        <p>Here goes some more text.</p>
        </div>
@@ -30,14 +22,40 @@ const Header = props => {
   )
 }
 
+const Card = props => {
+  const { thumbnail, title } = props
+  return (
+    <div className="card">
+      <img src={thumbnail} />
+      <p>{title}</p>
+    </div>
+  )
+}
+
+
+const Footer = props => {
+  return (
+     <footer>
+      <p className="logo">Betty Stein</p>
+      <li>
+        <ul>Projects</ul>
+        <ul>About</ul>
+        </li>
+        </footer>
+  )
+}
+
+
 const Frontpage = () => {
   return (
     <div>
       <Header />
+      <div className="content">
       {workFrontMatters.map((frontMatter, i) => {
         const { thumbnail, title } = frontMatter
         return <Card key={i} thumbnail={thumbnail} title={title} />
-      })}
+      })}</div>
+      <Footer />
     </div>
   )
 }
@@ -48,4 +66,12 @@ Frontpage.meta = {
   keywords: ['Design', 'Branding', 'UX'],
 }
 
+
+
+
+
 export default Frontpage
+
+
+
+
