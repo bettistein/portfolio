@@ -1,6 +1,7 @@
 import React from 'react'
 import {hot} from 'react-hot-loader'
 import Meta from '../components/Meta'
+import WorkLayout from './WorkLayout'
 
 import '../styles/main.scss'
 
@@ -22,15 +23,11 @@ const SiteBody = (props, ctx) => {
     return <Wrapper meta={page.file.meta}>{props.children}</Wrapper>
   }
 
-  
+  if (location.pathname.match(/^\/work/)) {
+    return <WorkLayout page={page} />
+  }
 
-  const MdxComponent = page.file
-
-  return (
-    <Wrapper meta={page.file.meta}>
-      <MdxComponent />
-    </Wrapper>
-  )
+  return <div> Unknown Layout </div>
 }
 
 export default hot(module)(SiteBody)
