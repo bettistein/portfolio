@@ -1,0 +1,27 @@
+.nav{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+    
+ 
+    & .logo {
+        font-size: 24px;
+        font-weight: 400;
+        opacity: 1;
+      }
+
+    a {
+        text-decoration: none;
+        color: #252123;
+    }
+    
+    a:hover, a:active {
+        text-decoration: underline;
+    }
+     
+    
+    
+  }

@@ -1,11 +1,12 @@
 import React from 'react'
 import Meta from '../components/Meta'
+import Nav from '../components/Nav'
 import {MDXProvider} from '@mdx-js/tag'
 
 const SideBar = props => {
   const {client, project, year} = props
   return (
-    <div>
+    <div className="sidebar">
       <div>
         {' '}
         <span> Client:</span> {client}{' '}
@@ -43,17 +44,24 @@ export default props => {
   return (
     <div className="work-layout">
       <Meta title={title} description={description} keywords={keywords} />
+     
       <main>
+      <Nav />
+      <div className="hero-wrapper">
         <img src={hero} className="hero" />
-        <div>
+        </div>
+        <div className="two-column-text">
           <SideBar
             client={sideinfo.client}
             project={sideinfo.project}
             year={sideinfo.year}
           />
-          <MdxComponent />
+          <div className="mdxcomponent">
+
+          <MdxComponent /> </div>
         </div>
         <Gallery images={gallery} />
+        
       </main>
     </div>
   )

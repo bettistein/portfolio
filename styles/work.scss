@@ -1,0 +1,56 @@
+/* Work layout */
+
+.work-layout {
+    & main {
+      max-width: 810px;
+      margin: 0 auto;
+      min-width: 320px;
+      
+    }
+
+  
+    & .hero {
+        width: 86vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -43vw;
+        margin-right: -43vw;
+        // outline: 25px solid white;
+        //outline-offset: -25px;
+        margin-bottom: 50px;
+    } 
+
+
+    .two-column-text {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+
+
+        & .mdxcomponent {
+            max-width: 520px;
+            /*background-color: red;*/
+            
+        }
+
+        & .sidebar {
+            font-size: 12px;
+            line-height: 1.5;
+            color: #252123;
+            opacity: 0.4;
+
+        }
+    }
+
+
+
+    & .gallery {
+
+      & img {
+        max-width: 100%;
+        
+      }
+    }
+  }
+

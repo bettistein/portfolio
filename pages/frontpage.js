@@ -6,11 +6,11 @@ import { workFrontMatters } from '../data'
 const Header = props => {
   return (
     <div className="lpheader">
-     <div className="nav">
+     <div className="nav-frontpage">
       <p className="logo">Betty Stein</p>
       <li>
-        <ul>Projects</ul>
-        <ul>About</ul>
+      <ul><a href="#anchor"> Projects</a></ul>
+        <ul><a href="../about"> About</a></ul>
 
         </li>
       </div>
@@ -50,7 +50,7 @@ const Frontpage = () => {
   return (
     <div>
       <Header />
-      <div className="content">
+      <div id="anchor" className="content">
       {workFrontMatters.map((frontMatter, i) => {
         const { thumbnail, title, href } = frontMatter
         return <Card key={i} thumbnail={thumbnail} title={title} href={href} />
