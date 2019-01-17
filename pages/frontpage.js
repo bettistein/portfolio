@@ -7,7 +7,7 @@ const Header = props => {
   return (
     <div className="lpheader">
      <div className="nav-frontpage">
-      <p className="logo">Betty Stein</p>
+      <span className="logo">Betty Stein</span>
       <li>
       <ul><a href="#anchor"> Projects</a></ul>
         <ul><a href="../about"> About</a></ul>
@@ -36,10 +36,10 @@ const Card = props => {
 const Footer = props => {
   return (
      <footer>
-      <p className="logo">Betty Stein</p>
+      <a href="/">Betty Stein</a>
       <li>
-        <ul>Projects</ul>
-        <ul>About</ul>
+        <ul><a href="#anchor"> Projects</a></ul>
+        <ul><a href="../about"> About</a></ul>
         </li>
         </footer>
   )

@@ -2,11 +2,63 @@
 @import './work.scss';
 @import './nav.scss';
 
-body {
+
+/* -----
+
+OVERALL DEFINITIONS:
+
+------ */
+
+html, body, ul, ol {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
+
+
+ul, li {
+  display: inline;
+  list-style: none;
+  padding-left: 25px;
+
+}
+
+
+/* -----
+
+FRONTPAGE DEFINITIONS:
+
+------ */
+
+.lpheader {
+  position: relative;
+  height: 100vh;
+  margin-bottom: 50px;
+
+  background-color: $beige;
+  outline: 25px solid white;
+  outline-offset: -25px;
+
+  .headercontent {
+    position: absolute;
+    margin-top: 15%;
+    margin-left: 112px;
+    margin-right: 5%;
+    max-width: 780px;
+  }
+
+  @media #{$screen-small} {
+     .headercontent {
+      position: absolute;
+      margin-top: 30%;
+      margin-left: 50px;
+      margin-right: 5%;
+      max-width: 780px;
+
+  }
+}
+}
+
 
 .content {
   margin: 0 auto;
@@ -14,9 +66,9 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   max-width: 900px;
-}
 
-.card {
+
+  & .card {
   position: relative;
   width: 380px;
   height: 503px;
@@ -29,35 +81,19 @@ body {
     width: 380px;
   }
   & > p {
-    color: #252123;
-    opacity: 0.4;
     font-size: 14px;
     bottom: -20px;
     position: absolute;
   }
 }
 
-.lpheader {
-  position: relative;
-  height: 100vh;
-  margin-bottom: 50px;
-
-  background-color: #f5f3f4;
-  outline: 25px solid white;
-  outline-offset: -25px;
-
-  .headercontent {
-    position: absolute;
-    margin-top: 15%;
-    margin-left: 112px;
-    margin-right: 5%;
-    max-width: 780px;
-  }
-
-  p {
-    opacity: 0.4;
-  }
 }
+
+
+
+/* -----
+STARTPAGE NAVIGATION:
+------ */
 
 .nav-frontpage {
   position: absolute;
@@ -68,30 +104,37 @@ body {
   width: 80%;
   margin-right: 112px;
   height: 50px;
- 
-  & .logo {
-    font-size: 24px;
-    font-weight: 400;
-    opacity: 1;
-  }
-
-a {
-    text-decoration: none;
-    color: #252123;
+  opacity: 0.4;
 }
 
-a:hover, a:active {
-    text-decoration: underline;
+@media #{$screen-small} {
+  .nav-frontpage {
+    position: absolute;
+    margin: 50px 70px 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90vw;
+    height: 40px;
+    opacity: 0.4;
+    //background-color: red;
 }
- 
 }
 
+
+/* -----
+FOOTER:
+------ */
 footer {
-  background-color: #f5f3f4;
+  background-color: $beige;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   height: 42px;
   font-size: 14px;
+  
+  & a {
+    opacity: 0.4;
+  }
 }

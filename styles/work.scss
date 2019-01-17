@@ -1,14 +1,21 @@
-/* Work layout */
+/* /* -----
+
+LAYOUT FOR PROJECTS PAGES:
+
+------ */
+
 
 .work-layout {
     & main {
       max-width: 810px;
       margin: 0 auto;
       min-width: 320px;
-      
     }
 
-  
+/* -----
+  CENTERED HEADER IMAGE:
+------ */
+
     & .hero {
         width: 86vw;
         position: relative;
@@ -21,6 +28,9 @@
         margin-bottom: 50px;
     } 
 
+/* -----
+TEXT AREA WITH SIDEBAR:
+------ */
 
     .two-column-text {
         display: flex;
@@ -30,8 +40,6 @@
 
         & .mdxcomponent {
             max-width: 520px;
-            /*background-color: red;*/
-            
         }
 
         & .sidebar {
@@ -43,13 +51,14 @@
         }
     }
 
-
+/* -----
+PHOTO GALLERY:
+------ */
 
     & .gallery {
 
       & img {
         max-width: 100%;
-        
       }
     }
   }

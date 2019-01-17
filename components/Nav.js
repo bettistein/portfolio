@@ -5,7 +5,7 @@ import { isAbsolute } from 'path';
 const Nav = props => {
     return (
 <div className="nav">
-      <p className="logo"><a href="/">Betty Stein</a></p>
+      <span className="logo"><a href="/">Betty Stein</a></span>
       <li>
         <ul><a href="../about"> Projects</a></ul>
         <ul><a href="../about"> About</a></ul>

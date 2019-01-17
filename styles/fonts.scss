@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 @font-face {
     font-family: 'Apercu';
     src: url('../assets/fonts/ApercuRegular.ttf');
@@ -5,26 +7,29 @@
 
 
 body {
-    color: #252123;
-    font-family: "Apercu", Arial, Helvetica, sans-serif;
-
+    color: $primary-color;
+    font: 100% $font-stack;
 }
 
 
 h1 {
     font-size: 58px;
+    line-height: 1.25;
     font-weight: 400;
 }
 
-ul, li {
-    display: inline;
-    list-style: none;
-}
+@media #{$screen-small} {
+    h1 {
+      font-size: 38px;
+    }
+  }
 
- p, a {
-    opacity: 0.4;
 
-    
+a {
+    text-decoration: none;
+    color: $primary-color;
+
+
 }
 
 p {
@@ -33,7 +38,5 @@ p {
     font-weight: 400;
     margin-block-start: 0em;
     margin-block-end: 0em;
-
-
-
+    opacity: 0.4;
 }
