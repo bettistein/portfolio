@@ -21,6 +21,21 @@
         text-decoration: underline;
     }
      
+
+@media #{$screen-small} {
+    .nav{
+        padding: 50px;
+        margin: 0;
+        
+    }
+        .logo {
+            font-size: 16px;
+            font-weight: 600;
+          }
     
+        a {
+            text-decoration: none;
+        }
+    }
     
  

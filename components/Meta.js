@@ -1,7 +1,12 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 
-const Meta = ({siteName = 'Bettystein', title = '', description = '', keywords = []}) => (
+const Meta = ({
+  siteName = 'Bettystein',
+  title = '',
+  description = '',
+  keywords = [],
+}) => (
   <Helmet>
     <link rel="canonical" href="https://bettystein.com/" />
     <link rel="icon" type="image/png" href="/favicon.png" />
