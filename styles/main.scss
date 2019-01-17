@@ -35,6 +35,7 @@ FRONTPAGE DEFINITIONS:
   position: relative;
   height: 100vh;
   margin-bottom: 50px;
+  width: 100vw;
 
   background-color: $beige;
   outline: 25px solid white;
@@ -58,8 +59,21 @@ FRONTPAGE DEFINITIONS:
 
   }
 }
+@media #{$screen-small} {
+  .headercontent {
+   position: absolute;
+   margin-top: 30%;
+   margin-left: 50px;
+   margin-right: 10%;
+ 
+
+}
+}
 }
 
+/* -----
+AREA WITH CARDS:
+------ */
 
 .content {
   margin: 0 auto;
@@ -71,15 +85,13 @@ FRONTPAGE DEFINITIONS:
 
   & .card {
   position: relative;
-  width: 380px;
-  height: 503px;
-  max-width: 900px;
+  max-width: 380px;
+  max-height: 503px;
   margin: 20px;
-  //background-color: #F5F3F4;
   margin-bottom: 90px;
 
   & > img {
-    width: 380px;
+    max-width: 380px;
   }
   & > p {
     font-size: 14px;
@@ -87,8 +99,25 @@ FRONTPAGE DEFINITIONS:
     position: absolute;
   }
 }
+}
+
+@media #{$screen-xsmall} {
+  .content {
+    width: 85%;
+
+    & .card {
+      margin-bottom: 70px;
+  
+}
+  img {
+    width: 100%;
+  }
+
 
 }
+}
+
+
 
 
 
@@ -111,12 +140,11 @@ STARTPAGE NAVIGATION:
 @media #{$screen-small} {
   .nav-frontpage {
     position: absolute;
-    margin: 50px 70px 0px 50px;
+    margin: 50px 50px 0px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 90vw;
-    height: 40px;
+    width: 77vw;
     opacity: 0.4;
     //background-color: red;
 }
