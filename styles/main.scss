@@ -2,6 +2,7 @@
 @import './work.scss';
 @import './nav.scss';
 @import './variables.scss';
+@import './footer.scss';
 
 
 /* -----
@@ -23,7 +24,7 @@ body {
 ul, li {
   display: inline;
   list-style: none;
-  padding-left: 25px;
+  padding-left: 0;
 
 }
 
@@ -102,7 +103,6 @@ CONTENT AREA WITH CARDS:
   justify-content: space-around;
   max-width: 900px;
 
-
   & .card {
   position: relative;
   max-width: 380px;
@@ -113,9 +113,14 @@ CONTENT AREA WITH CARDS:
   & > img {
     max-width: 380px;
   }
-
-  
 }
+
+.card:hover {
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+
 .card-title {
   font-size: 14px;
   bottom: -25px;
@@ -130,6 +135,9 @@ CONTENT AREA WITH CARDS:
 .card-projects {
   font-family: "Apercu Italic";
 }
+
+
+
 
 @media #{$screen-xsmall} {
   .content {
@@ -146,6 +154,8 @@ CONTENT AREA WITH CARDS:
 }
 
 
+
+
 /* -----
 STARTPAGE NAVIGATION:
 ------ */
@@ -160,6 +170,10 @@ STARTPAGE NAVIGATION:
   margin-right: 112px;
   height: 50px;
   opacity: 0.4;
+
+  & ul {
+    padding-left: 25px;
+  }
 }
 
 @media #{$screen-small} {
@@ -176,19 +190,6 @@ STARTPAGE NAVIGATION:
 }
 
 
-/* -----
-FOOTER:
------- */
-footer {
-  background-color: $beige;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  height: 42px;
-  font-size: 14px;
-  
-  & a {
-    opacity: 0.4;
-  }
-}
+
+
+

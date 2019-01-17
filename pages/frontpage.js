@@ -1,6 +1,9 @@
 import React from 'react'
 import { workFrontMatters } from '../data'
 import fpFlower from '../assets/img/fp-flower.svg'
+import Footer from '../components/Footer'
+
+
 
 const Header = props => {
   return (
@@ -43,21 +46,7 @@ const Card = props => {
   )
 }
 
-const Footer = props => {
-  return (
-    <footer>
-      <a href="/">Betty Stein</a>
-      <li>
-        <ul>
-          <a href="#anchor"> Projects</a>
-        </ul>
-        <ul>
-          <a href="../about"> About</a>
-        </ul>
-      </li>
-    </footer>
-  )
-}
+
 
 const Frontpage = () => {
   return (

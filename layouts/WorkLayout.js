@@ -35,6 +35,27 @@ const Gallery = props => {
   )
 }
 
+const MoreProjects = props => {
+  const { images } = props
+
+  return (
+    <div className="more-projects">
+      <h3>More Projects</h3>
+      <div className="image-item-wrapper">
+        <div className="image-item">eins</div>
+        <div className="image-item">zwei</div>
+        <div className="image-item">drei</div>
+      </div>
+    </div>
+  )
+}
+
+/* ------------
+
+Render/Export all that stuff above ^
+
+------------ */
+
 export default props => {
   const { page } = props
   const MdxComponent = page.file
@@ -61,10 +82,9 @@ export default props => {
           </div>
         </div>
         <Gallery images={gallery} />
-        
       </main>
+      <MoreProjects />
       <Footer />
     </div>
-    
   )
 }

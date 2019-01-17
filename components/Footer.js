@@ -1,10 +1,12 @@
 import React from 'react'
 
 const Footer = props => {
-    return (
-      <footer>
-        <a href="/">Betty Stein</a>
+  return (
+    <footer>
         <li>
+          <ul>
+            <a href="/"> © Betty Stein</a>
+          </ul>
           <ul>
             <a href="#anchor"> Projects</a>
           </ul>
@@ -12,8 +14,8 @@ const Footer = props => {
             <a href="../about"> About</a>
           </ul>
         </li>
-      </footer>
-    )
-  }
+    </footer>
+  )
+}
 
 export default Footer

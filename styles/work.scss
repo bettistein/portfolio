@@ -1,4 +1,4 @@
-/* /* -----
+/*  -----
 
 LAYOUT FOR PROJECTS PAGES:
 
@@ -54,12 +54,12 @@ LAYOUT FOR PROJECTS PAGES:
             //outline-offset: -25px;
             margin-bottom: 25px;
         } 
-
     }
 
 
 /* -----
 TEXT AREA WITH SIDEBAR:
+(2-column-layout)
 ------ */
 
     .two-column-text {
@@ -107,7 +107,7 @@ TEXT AREA WITH SIDEBAR:
 PHOTO GALLERY:
 ------ */
 
-    & .gallery {
+    .gallery {
 
       & img {
         max-width: 100%;
@@ -115,3 +115,43 @@ PHOTO GALLERY:
     }
   }
 
+
+  /*  -----
+
+MORE PROJECTS GALLERY
+(3-column-layout)
+
+------ */
+
+.more-projects {
+    height: 600px;
+    margin-top: 95px;
+    background-color: $beige;
+    width:100%;
+   
+
+    & > h3 {
+        text-align: center;
+        padding: 76px 0 64px 0;
+        opacity: 0.4;
+        font-weight: 400;
+        margin: 0;
+        font-size: 21px;
+    }
+    .image-item-wrapper {
+        display: flex;
+        justify-content: space-between;
+        max-width: 90vw;
+        height: 400px;
+       // background-color: rosybrown;
+        margin: 0 auto;
+    }
+
+    .image-item {
+    width: 224px;
+    height: 284px;
+    background-color: #B4724D;
+ 
+    }
+
+}
