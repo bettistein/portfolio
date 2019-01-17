@@ -1,11 +1,12 @@
 .nav{
-    margin-top: 70px;
+    margin: 70px 0 24px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-bottom: 15px;
     opacity: 0.4;
+
+
     
 }
     .logo {
@@ -28,7 +29,7 @@ MOBIL SIZE:
 
 @media #{$screen-small} {
     .nav{
-        margin: 35px 0 10px 0;
+        margin: 45px 0 20px 0;
     }
         .logo {
             font-size: 16px;

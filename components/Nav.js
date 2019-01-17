@@ -1,5 +1,5 @@
 import React from 'react'
-import { isAbsolute } from 'path'
+
 
 const Nav = props => {
   return (

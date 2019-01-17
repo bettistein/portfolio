@@ -52,7 +52,7 @@ LAYOUT FOR PROJECTS PAGES:
             margin-right: -50vw;
             // outline: 25px solid white;
             //outline-offset: -25px;
-            margin-bottom: 50px;
+            margin-bottom: 25px;
         } 
 
     }
@@ -78,6 +78,10 @@ TEXT AREA WITH SIDEBAR:
             color: #252123;
             opacity: 0.4;
 
+            & > div > span {
+                font-weight: bold;
+            }
+
         }
     }
 
@@ -87,8 +91,12 @@ TEXT AREA WITH SIDEBAR:
             flex-direction: column;
             //justify-content: space-between;
             margin-bottom: 50px;
+
+
+            & .sidebar {
+                margin-bottom: 25px;
     
-    
+            }
             & .mdxcomponent {
                 max-width: 520px;
             }

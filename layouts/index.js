@@ -2,6 +2,8 @@ import React from 'react'
 import { hot } from 'react-hot-loader'
 import Meta from '../components/Meta'
 import WorkLayout from './WorkLayout'
+import Footer from '../components/Footer'
+
 
 import '../styles/main.scss'
 
@@ -33,6 +35,7 @@ const SiteBody = (props, ctx) => {
   return (
     <Wrapper meta={page.file.meta}>
       <MdxComponent />
+      <Footer />
     </Wrapper>
   )
 }
