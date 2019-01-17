@@ -28,15 +28,16 @@ ul, li {
 /* -----
 
 FRONTPAGE DEFINITIONS:
-
+Header:
 ------ */
 
 .lpheader {
   position: relative;
-  height: 100vh;
-  margin-bottom: 50px;
+  height: 90vh;
+  min-height: 660px;
   width: 100vw;
-
+  margin-bottom: 50px;
+  
   background-color: $beige;
   outline: 25px solid white;
   outline-offset: -25px;
@@ -48,31 +49,47 @@ FRONTPAGE DEFINITIONS:
     margin-right: 5%;
     max-width: 780px;
   }
-
-  @media #{$screen-small} {
-     .headercontent {
-      position: absolute;
-      margin-top: 30%;
-      margin-left: 50px;
-      margin-right: 5%;
-      max-width: 780px;
-
-  }
 }
+
+.fp-flower {
+  position: absolute;
+  bottom: 60px;
+  right: 110px;
+}
+
 @media #{$screen-small} {
-  .headercontent {
-   position: absolute;
-   margin-top: 30%;
-   margin-left: 50px;
-   margin-right: 10%;
- 
+  .lpheader {
+    outline: 14px solid white;
+    outline-offset: -14px;
+    height: 95vh;
+   // background-color: red;
+  
 
+   .headercontent {
+    position: absolute;
+    margin-top: 110px;;
+    margin-left: 50px;
+    margin-right: 5%;
+    max-width: 780px;
+}
+.fp-flower {
+  position: absolute;
+  bottom: 60px;
+  left: 50px;
 }
 }
 }
+
+@media #{$screen-xsmall} {
+  .headercontent {
+   margin-right: 10%;
+  }
+
+ }
+
 
 /* -----
-AREA WITH CARDS:
+CONTENT AREA WITH CARDS:
 ------ */
 
 .content {
@@ -93,12 +110,22 @@ AREA WITH CARDS:
   & > img {
     max-width: 380px;
   }
-  & > p {
-    font-size: 14px;
-    bottom: -20px;
-    position: absolute;
-  }
+
+  
 }
+.card-title {
+  font-size: 14px;
+  bottom: -25px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  //background-color: coral;
+  margin: 0;
+}
+
+}
+.card-projects {
+  font-family: "Apercu Italic";
 }
 
 @media #{$screen-xsmall} {
@@ -107,18 +134,13 @@ AREA WITH CARDS:
 
     & .card {
       margin-bottom: 70px;
-  
 }
+
   img {
     width: 100%;
   }
-
-
+ }
 }
-}
-
-
-
 
 
 /* -----

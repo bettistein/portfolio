@@ -5,6 +5,16 @@
     src: url('../assets/fonts/ApercuRegular.ttf');
   }
 
+  @font-face {
+    font-family: 'Apercu Mono';
+    src: url('../assets/fonts/ApercuMono.ttf');
+  }
+
+  @font-face {
+    font-family: 'Apercu Italic';
+    src: url('../assets/fonts/ApercuItalic.ttf');
+  }
+
 
 body {
     color: $primary-color;
@@ -20,7 +30,7 @@ h1 {
 
 @media #{$screen-small} {
     h1 {
-      font-size: 42px;
+      font-size: 46px;
     }
   }
 

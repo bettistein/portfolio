@@ -1,5 +1,6 @@
 import React from 'react'
 import { workFrontMatters } from '../data'
+import fpFlower from '../assets/img/fp-flower.svg'
 
 const Header = props => {
   return (
@@ -22,6 +23,9 @@ const Header = props => {
         </h1>
         <p>Here goes some more text.</p>
       </div>
+      <div className="fp-flower">
+        <img src={fpFlower} />
+      </div>
     </div>
   )
 }
@@ -31,9 +35,9 @@ const Card = props => {
   return (
     <a href={href} className="card">
       <img src={thumbnail} />
-      <p>
-      <span> {sideinfo.client} </span>
-      <span> {sideinfo.project} </span>
+      <p className="card-title">
+        <span> {sideinfo.client} </span>
+        <span className="card-projects"> {sideinfo.project} </span>
       </p>
     </a>
   )
@@ -63,7 +67,12 @@ const Frontpage = () => {
         {workFrontMatters.map((frontMatter, i) => {
           const { thumbnail, href, sideinfo } = frontMatter
           return (
-            <Card key={i} thumbnail={thumbnail} href={href} sideinfo={sideinfo} />
+            <Card
+              key={i}
+              thumbnail={thumbnail}
+              href={href}
+              sideinfo={sideinfo}
+            />
           )
         })}
       </div>
