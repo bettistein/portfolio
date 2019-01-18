@@ -42,9 +42,16 @@ const MoreProjects = props => {
     <div className="more-projects">
       <h3>More Projects</h3>
       <div className="image-item-wrapper">
-        <div className="image-item">eins</div>
-        <div className="image-item">zwei</div>
-        <div className="image-item">drei</div>
+        <div className="image-item">
+          image eins
+          <p>Project Name</p>
+        </div>
+        <div className="image-item">
+          image zwei <p>Project Name</p>
+        </div>
+        <div className="image-item">
+          image drei <p>Project Name</p>
+        </div>
       </div>
     </div>
   )

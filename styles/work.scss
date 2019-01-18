@@ -143,15 +143,35 @@ MORE PROJECTS GALLERY
         justify-content: space-between;
         max-width: 90vw;
         height: 400px;
-       // background-color: rosybrown;
+       //background-color: rosybrown;
         margin: 0 auto;
     }
 
     .image-item {
     width: 224px;
-    height: 284px;
+    height: 320px;
     background-color: #B4724D;
  
     }
+}
+@media #{$screen-small} {
+    .more-projects {
+        height: 70vh;
+        margin-top: 95px;
+        background-color: $beige;
+        width:100%;
+
+    .image-item-wrapper {
+        height: 200px;
+       //background-color: rosybrown;
+
+    }
+
+    .image-item {
+        width: 92px;
+        height: 125px;
+     
+        }
+}
 
 }
