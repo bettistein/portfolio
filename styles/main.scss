@@ -19,7 +19,7 @@ html, body, ul, ol {
 }
 
 body {
-  background-color: #FDFDFD;
+  background-color: $snow;
 }
 
 ul, li {
@@ -28,6 +28,12 @@ ul, li {
   padding-left: 0;
 
 }
+
+
+a:hover, a:active {
+  text-decoration: underline;
+}
+
 
 
 /* -----
@@ -147,7 +153,7 @@ CONTENT AREA WITH CARDS:
 
 @media #{$screen-xsmall} {
   .content {
-    width: 85%;
+  width: 85%;
 
     & .card {
       margin-bottom: 70px;

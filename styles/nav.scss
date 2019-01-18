@@ -1,4 +1,4 @@
-.nav{
+nav{
     margin: 70px 0 24px 0;
     display: flex;
     justify-content: space-between;
@@ -9,29 +9,30 @@
     & ul {
         padding-left: 25px;
       }
-  
-}
-    .logo {
-        font-size: 24px;
-        font-weight: 400;
-      }
 
-    a {
-        text-decoration: none;
-    }
+ 
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+
     
-    a:hover, a:active {
-        text-decoration: underline;
-    }
-    
+
     
 /* -----
 MOBIL SIZE:
 ------ */
 
 @media #{$screen-small} {
-    .nav{
-        margin: 45px 0 20px 0;
+    nav {
+        padding: 45px 0 20px 0;
+        max-width: 85vw;
+        margin: 0 auto;
+
+
     }
         .logo {
             font-size: 16px;

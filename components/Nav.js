@@ -1,21 +1,20 @@
 import React from 'react'
 
-
 const Nav = props => {
   return (
-    <div className="nav">
+    <nav>
       <span className="logo">
         <a href="/">Betty Stein</a>
       </span>
       <li>
         <ul>
-          <a href="../about"> Projects</a>
+          <a href="/"> Projects</a>
         </ul>
         <ul>
           <a href="../about"> About</a>
         </ul>
       </li>
-    </div>
+    </nav>
   )
 }
 
