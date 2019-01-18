@@ -14,7 +14,7 @@ module.exports = {
   layout: () => require('./layouts').default,
   paths: {
     '/': () => require('./pages/frontpage').default,
-    'about': () => mdxPage(require('./pages/about.mdx')),
+    'about': () => require('./pages/about').default,
     'work/aigner': () => mdxPage(require('./pages/work/aigner.mdx')),
     'work/run-wild': () => mdxPage(require('./pages/work/run-wild.mdx')),
     'work/runtastic-webconcept': () => mdxPage(require('./pages/work/runtastic-webconcept.mdx')),

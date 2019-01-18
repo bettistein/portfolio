@@ -24,7 +24,9 @@ const Header = props => {
           Visual Designer, passionately crafting identities and user interfaces.
           Art Director. Cat lover.
         </h1>
-        <p>Here goes some more text.</p>
+        <p>You need a new Logo, App Design or a Website? <br/>
+            I design beautiful, though useful solutions for you.
+        </p>
       </div>
       <div className="fp-flower">
         <img src={fpFlower} />

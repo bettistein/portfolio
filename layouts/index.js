@@ -29,6 +29,18 @@ const SiteBody = (props, ctx) => {
     return <WorkLayout page={page} />
   }
 
+  if (location.pathname.match(/^\/about/)) {
+    return (
+      <Wrapper meta={page.file.meta}>
+        <div className="one-column-wrapper">
+          <Nav />
+          {props.children}
+        </div>
+        <Footer />
+      </Wrapper>
+    )
+  }
+
   /* Otherwise assume that we should render a Markdown component */
   const MdxComponent = page.file
 

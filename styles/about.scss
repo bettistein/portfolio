@@ -2,3 +2,28 @@
     max-width: 810px;
     margin: auto;
 }
+
+.two-column-layout {
+    display: flex;
+    align-items: center;
+    margin: 120px 0px 120px 0px;
+    //background-color: royalblue;
+
+
+    & > .image-wrapper {
+        width: 376px;
+        height: 477px;
+        background-color: bisque;
+        position: relative;
+        margin-right: 60px;
+
+       & > img {
+           width:  376px;
+       } 
+    }
+
+     & > .text-wrapper {
+         width: 350px;
+     }
+}
+
