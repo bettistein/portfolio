@@ -3,33 +3,34 @@ import { workFrontMatters } from '../data'
 import fpFlower from '../assets/img/fp-flower.svg'
 import Footer from '../components/Footer'
 
-
-
 const Header = props => {
   return (
     <div className="lpheader">
-      <div className="nav-frontpage">
-        <span className="logo">Betty Stein</span>
-        <li>
-          <ul>
-            <a href="#anchor"> Projects</a>
-          </ul>
-          <ul>
-            <a href="/about"> About</a>
-          </ul>
-        </li>
-      </div>
-      <div className="headercontent">
-        <h1>
-          Visual Designer, passionately crafting identities and user interfaces.
-          Art Director. Cat lover.
-        </h1>
-        <p>You need a new Logo, App Design or a Website? <br/>
-            I design beautiful, though useful solutions for you.
-        </p>
-      </div>
-      <div className="fp-flower">
-        <img src={fpFlower} />
+      <div className="lp-header-wrapper">
+        <div className="nav-frontpage">
+          <span className="logo">Betty Stein</span>
+          <li>
+            <ul>
+              <a href="#anchor"> Projects</a>
+            </ul>
+            <ul>
+              <a href="/about"> About</a>
+            </ul>
+          </li>
+        </div>
+        <div className="headercontent">
+          <h1>
+            Visual Designer, passionately crafting identities and user
+            interfaces. Art Director. Cat lover.
+          </h1>
+          <p>
+            You need a new Logo, App Design or a Website? <br />I design
+            beautiful, though useful solutions for you.
+          </p>
+        </div>
+        <div className="fp-flower">
+          <img src={fpFlower} />
+        </div>
       </div>
     </div>
   )
@@ -47,8 +48,6 @@ const Card = props => {
     </a>
   )
 }
-
-
 
 const Frontpage = () => {
   return (

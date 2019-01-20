@@ -22,9 +22,6 @@ nav{
         color: $primary-color;
         opacity: 0.65;
     }
- 
-
-
 }
 
 .logo {
@@ -66,13 +63,13 @@ MOBIL SIZE:
 @media #{$screen-xsmall} {
     nav {
         padding: 45px 0 20px 0;
-        max-width: 85vw;
+        //max-width: 85vw;
         margin: 0 auto;
 
 
     }
         .logo {
-            font-size: 16px;
+            font-size: 18px;
             font-weight: 600;
           }
     
