@@ -1,37 +1,54 @@
 @import './variables.scss';
 
+/* -----
+OVERALL LAYOUT:
+------ */
+
 .one-column-wrapper {
     max-width: 810px;
     margin: auto;
+    //padding: 0 32px 0 32px;
 
+}
+
+
+/* -----
+IMAGE & TEXT:
+display big image for wide devices
+------ */
 
 .two-column-layout {
     display: flex;
     align-items: center;
     margin: 120px 0px 120px 0px;
-    //background-color: royalblue;
-
+    padding-left: $s-space;
+    padding-right: $s-space;
 
     & > .image-wrapper {
         width: 376px;
         height: 477px;
-        background-color: bisque;
         position: relative;
         margin-right: 60px;
+        background-color: bisque;
 
-       & > img {
+       & > #photo-l {
            width:  376px;
        } 
     }
+
     #photo-s {
-        display: none;
-        width: 100%;
-            } 
+    display: none;
+    width: 100%;
+    } 
 
      & > .text-wrapper {
-         width: 350px;
+         max-width: 350px;
      }
 }
+
+    /* -----
+INFOS IN VARIOUS COLUMS:
+------ */
 
 .about-info-wrapper {
     margin-bottom: 220px;
@@ -47,9 +64,25 @@
             opacity: 0.4;
             padding-block-end: 8px;
             font-size: 14px;
-        }
-       
+        }     
 }
+
+
+
+/* -----
+
+TABLET SIZE:
+
+------ */
+
+
+
+
+/* -----
+
+MOBIL SIZE:
+
+------ */
 
 @media #{$screen-small} {
     .two-column-layout {
@@ -59,8 +92,6 @@
         justify-content: center;
         margin: 60px 0px 120px 0px;
        
-
-
         & > .image-wrapper {
             width: 376px;
             height: 477px;
@@ -69,17 +100,20 @@
             margin-bottom: 60px;
             display: none;
 
-    
-           & > #photo-l {
+            & > #photo-l {
                width: 376px;
-           } 
+            } 
         }
         
         #photo-s {
             display: block;
             width: 100%;
             margin-bottom: 25px;
-                } 
+            } 
+
+            & > .text-wrapper {
+                max-width: 100%;
+            }
     }
 
 
@@ -99,5 +133,6 @@
  }
 }
 
-}
+
+
 

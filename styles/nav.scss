@@ -4,29 +4,60 @@ nav{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    opacity: 0.4;
 
     & ul {
         padding-left: 25px;
       }
 
- 
+    & .active  {
+        opacity: 0.65;
+        //text-decoration: underline; 
+        border-bottom: 1px solid currentColor;
+        padding-bottom: 4px;
+
+
+}
+    
+
+    & a {
+        opacity: 0.4;
+
+    }
+
 }
 
 .logo {
     font-size: 24px;
     font-weight: 400;
+    letter-spacing: -0.03em;
 }
 
 
-    
 
     
 /* -----
-MOBIL SIZE:
+TABLET SIZE:
 ------ */
 
+
 @media #{$screen-small} {
+    nav {
+        padding: 45px 0px 20px 0px;
+        max-width: 100vw;
+        margin: 0 auto;
+    }
+        .logo {
+            font-size: 24px;
+            font-weight: 600;
+          }
+}
+
+
+ /* -----
+MOBIL SIZE:
+------ */   
+
+@media #{$screen-xsmall} {
     nav {
         padding: 45px 0 20px 0;
         max-width: 85vw;
@@ -39,9 +70,6 @@ MOBIL SIZE:
             font-weight: 600;
           }
     
-        a {
-            text-decoration: none;
-        }
     }
     
  

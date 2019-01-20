@@ -26,14 +26,14 @@ const SiteBody = (props, ctx) => {
   }
 
   if (location.pathname.match(/^\/work/)) {
-    return <WorkLayout page={page} />
+    return <WorkLayout page={page} pathname={location.pathname}/>
   }
 
   if (location.pathname.match(/^\/about/)) {
     return (
       <Wrapper meta={page.file.meta}>
         <div className="one-column-wrapper">
-          <Nav />
+          <Nav pathname={location.pathname}/>
           {props.children}
         </div>
         <Footer />

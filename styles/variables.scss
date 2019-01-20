@@ -2,11 +2,8 @@ $font-stack: "Apercu", Arial, Helvetica, sans-serif;
 
 
 /* -----
-
 COLORES:
-
 ------ */
-
 
 $primary-color: #252123;
 $beige: #f5f3f4;
@@ -14,10 +11,14 @@ $snow: #FDFDFD;
 
 
 /* -----
-
-SCREEN SIZES:
-
+SPACES:
 ------ */
-$screen-xsmall: "(max-width:450px)";
-$screen-small: "(max-width: 750px)";
+$s-space: 32px;
+
+
+/* -----
+SCREEN SIZES:
+------ */
+$screen-xsmall: "(max-width:600px)";
+$screen-small: "(max-width: 870px)";
 $screen-wide: "(min-width: 1120px)";

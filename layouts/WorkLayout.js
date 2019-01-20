@@ -64,7 +64,7 @@ Render/Export all that stuff above ^
 ------------ */
 
 export default props => {
-  const { page } = props
+  const { page, pathname } = props
   const MdxComponent = page.file
 
   const { hero, sideinfo, gallery } = page.file.frontMatter
@@ -74,7 +74,7 @@ export default props => {
       <Meta title={title} description={description} keywords={keywords} />
 
       <main>
-        <Nav />
+        <Nav pathname={pathname}/>
         <div className="hero-wrapper">
           <img src={hero} className="hero" />
         </div>

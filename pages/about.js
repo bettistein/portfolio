@@ -55,7 +55,7 @@ const About = () => {
           </ul>
         </div>
         <div>
-          <h3>Field of work</h3>
+          <h3>Field of Expertise</h3>
           <ul>
             <li>Logos</li>
             <li>Corporate Identity</li>
@@ -64,7 +64,7 @@ const About = () => {
             <li>Editorial Design</li>
             <li>Illustration</li>
             <li>Event Photography</li>
-            <li>html / css</li>
+            <li>HTML / CSS</li>
 
            
           </ul>

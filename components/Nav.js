@@ -1,6 +1,12 @@
 import React from 'react'
 
 const Nav = props => {
+  const { pathname } = props
+
+  const projectsClassName = pathname.match(/^\/work/) ? 'active' : ''
+  const aboutClassName = pathname === '/about' ? 'active' : ''
+
+  
   return (
     <nav>
       <span className="logo">
@@ -8,10 +14,14 @@ const Nav = props => {
       </span>
       <li>
         <ul>
-          <a href="/"> Projects</a>
+          <a href="/" className={projectsClassName}>
+            Projects
+          </a>
         </ul>
         <ul>
-          <a href="../about"> About</a>
+          <a href="/about" className={aboutClassName}>
+            About
+          </a>
         </ul>
       </li>
     </nav>
