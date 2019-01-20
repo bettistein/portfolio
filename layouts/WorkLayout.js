@@ -35,23 +35,36 @@ const Gallery = props => {
   )
 }
 
+const MoreProjectsCard = props => {
+  const { client, thumbnail, href } = props
+
+  return (
+    <a href={href} className="image-item">
+      image eins
+      <p>{client}</p>
+      <img src={thumbnail} />
+    </a>
+  )
+}
+
 const MoreProjects = props => {
-  const { images } = props
+  const { data } = props
 
   return (
     <div className="more-projects">
       <h3>More Projects</h3>
       <div className="image-item-wrapper">
-        <div className="image-item">
-          image eins
-          <p>Project Name</p>
-        </div>
-        <div className="image-item">
-          image zwei <p>Project Name</p>
-        </div>
-        <div className="image-item">
-          image drei <p>Project Name</p>
-        </div>
+        {data.map((project, i) => {
+          const { sideinfo, thumbnail, href } = project
+          return (
+            <MoreProjectsCard
+              key={i}
+              client={sideinfo.client}
+              thumbnail={thumbnail}
+              href={href}
+            />
+          )
+        })}
       </div>
     </div>
   )
@@ -67,14 +80,14 @@ export default props => {
   const { page, pathname } = props
   const MdxComponent = page.file
 
-  const { hero, sideinfo, gallery } = page.file.frontMatter
+  const { hero, sideinfo, gallery, moreProjects } = page.file.frontMatter
   const { title, description, keywords } = page.file.meta
   return (
     <div className="work-layout">
       <Meta title={title} description={description} keywords={keywords} />
 
       <main>
-        <Nav pathname={pathname}/>
+        <Nav pathname={pathname} />
         <div className="hero-wrapper">
           <img src={hero} className="hero" />
         </div>
@@ -90,7 +103,7 @@ export default props => {
         </div>
         <Gallery images={gallery} />
       </main>
-      <MoreProjects />
+      <MoreProjects data={moreProjects} />
       <Footer />
     </div>
   )
