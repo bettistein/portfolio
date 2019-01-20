@@ -40,9 +40,8 @@ const MoreProjectsCard = props => {
 
   return (
     <a href={href} className="image-item">
-      image eins
-      <p>{client}</p>
       <img src={thumbnail} />
+      <p>{client}</p>
     </a>
   )
 }
@@ -98,7 +97,7 @@ export default props => {
             year={sideinfo.year}
           />
           <div className="mdxcomponent">
-            <MdxComponent />{' '}
+            <MdxComponent />
           </div>
         </div>
         <Gallery images={gallery} />

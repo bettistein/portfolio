@@ -17,7 +17,7 @@
 
 
 body {
-    color: $primary-color;
+    color: $primary-lighten-40;
     font: 100% $font-stack;
 }
 
@@ -25,6 +25,8 @@ h1 {
     font-size: 58px;
     line-height: 1.25;
     font-weight: 400;
+    color: $primary-color;
+
 }
 
 @media #{$screen-small} {
@@ -42,17 +44,15 @@ h1 {
 
   h2 {
     font-size: 18px;
-    opacity: 0.4;
   }
 
   h3 {
     font-size: 16px;
-    opacity: 0.4;
   }
 
 a {
     text-decoration: none;
-    color: $primary-color;
+    color: $primary-lighten-40;
 
 }
 
@@ -62,5 +62,4 @@ p {
     font-weight: 400;
     margin-block-start: 0em;
     margin-block-end: 0.75em;
-    opacity: 0.4;
 }

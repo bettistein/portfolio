@@ -5,7 +5,8 @@ $font-stack: "Apercu", Arial, Helvetica, sans-serif;
 COLORES:
 ------ */
 
-$primary-color: #252123;
+$primary-color: rgb(37, 33, 35);
+$primary-lighten-40: rgba(37, 33, 35, 0.4);
 $beige: #f5f3f4;
 $snow: #FDFDFD;
 
@@ -20,5 +21,5 @@ $s-space: 32px;
 SCREEN SIZES:
 ------ */
 $screen-xsmall: "(max-width:600px)";
-$screen-small: "(max-width: 870px)";
+$screen-small: "(max-width: 850px)";
 $screen-wide: "(min-width: 1120px)";

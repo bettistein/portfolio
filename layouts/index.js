@@ -32,9 +32,12 @@ const SiteBody = (props, ctx) => {
   if (location.pathname.match(/^\/about/)) {
     return (
       <Wrapper meta={page.file.meta}>
+      
         <div className="one-column-wrapper">
           <Nav pathname={location.pathname}/>
           {props.children}
+
+
         </div>
         <Footer />
       </Wrapper>
