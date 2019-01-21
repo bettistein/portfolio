@@ -8,10 +8,10 @@ const Footer = props => {
             <a href="/"> © Betty Stein</a>
           </ul>
           <ul>
-            <a href="#anchor"> Projects</a>
+            <a href="/#anchor"> Projects</a>
           </ul>
           <ul>
-            <a href="../about"> About</a>
+            <a href="/about"> About</a>
           </ul>
         </li>
     </footer>

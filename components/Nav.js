@@ -14,7 +14,7 @@ const Nav = props => {
       </span>
       <li>
         <ul>
-          <a href="/" className={projectsClassName}>
+          <a href="/#anchor" className={projectsClassName}>
             Projects
           </a>
         </ul>
