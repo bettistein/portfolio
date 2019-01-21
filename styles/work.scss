@@ -162,21 +162,62 @@ MORE PROJECTS GALLERY
 @media #{$screen-small} {
     .more-projects {
         height: 70vh;
+        max-height: 500px;
         margin-top: 95px;
         background-color: $beige;
         width:100%;
 
+
     .image-item-wrapper {
+        display: flex;
+        justify-content: space-between;
+        max-width: 100%;
         height: 200px;
-       //background-color: rosybrown;
+        margin: 0 auto;
+        padding-right: 32px;
+        padding-left: 32px;
+        //background-color: rosybrown;
 
     }
 
     .image-item {
-        width: 92px;
-        height: 125px;
-     
-        }
+        max-width: 150px;
+        height: auto;
+
+        & img {
+            max-width: 150px;
+            height: auto;
+        } 
+     }
+}
 }
 
+@media #{$screen-xsmall} {
+    .more-projects {
+        height: 60vh;
+        max-height: 400px;
+        min-width: 320px;
+
+
+
+    .image-item-wrapper {
+        padding-right: 16px;
+        padding-left: 16px;
+    .image-item {
+        max-width: 90px;
+        height: auto;
+
+        & img {
+            max-width: 90px;
+            height: auto;
+        } 
+
+        & p {
+            font-size: 12px;
+            padding-top: 4px;
+        }
+     }
+    
+    }
+}
 }
