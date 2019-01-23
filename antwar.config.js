@@ -19,6 +19,8 @@ module.exports = {
     'work/run-wild': () => mdxPage(require('./pages/work/run-wild.mdx')),
     'work/runtastic-webconcept': () => mdxPage(require('./pages/work/runtastic-webconcept.mdx')),
     'work/tictactoe': () => mdxPage(require('./pages/work/tictactoe.mdx')),
+    'work/reason': () => mdxPage(require('./pages/work/reason.mdx')),
+
   },
 }
 
