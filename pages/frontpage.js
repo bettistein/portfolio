@@ -21,11 +21,11 @@ const Header = props => {
         <div className="headercontent">
           <h1>
             Visual Designer, passionately crafting identities and user
-            interfaces. Art Director. Cat lover.
+            interfaces that showcases your personality & purpose.
           </h1>
           <p>
-            You need a new Logo, App Design or a Website? <br />I design
-            beautiful, though useful solutions for you.
+            I strategically help you design the visual identity or digital product  <br />
+            that resonates with your goals and values.
           </p>
         </div>
         <div className="fp-flower">

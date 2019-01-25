@@ -11,9 +11,9 @@ const About = () => {
         </div>
         <img id="photo-s" src={profilPhotoS} />
         <div className="text-wrapper">
-          <h2>Hi there!</h2>
+          <h2>Hey, I'm Betty and</h2>
           <p>
-            My name is Betty, I am a Digital Designer based in Vienna, Austria.
+            I am a Digital Designer based in Vienna, Austria.
             After working for several years as a full-stack designer, I
             developed a passion for Branding, UI Design, and fun Illustrations.
             I take the time to understand your strategy, stakeholders and
@@ -26,7 +26,7 @@ const About = () => {
 
           <p>
             I´m always looking for new adventures & friends, so feel free to
-            send me a <a href="mailto:hi@bettystein.com">message</a>.
+            <a href="mailto:hi@bettystein.com">drop me a line</a>.
           </p>
         </div>
       </div>
@@ -77,10 +77,10 @@ const About = () => {
         <div>
           <h3>Field of Expertise</h3>
           <ul>
-            <li>Logos</li>
-            <li>Corporate Identity</li>
+            <li>Logo Design</li>
+            <li>Visual Identity</li>
             <li>Responsive Webdesign</li>
-            <li>UI/UX Mobile Apps</li>
+            <li>UI/UX for mobile Apps</li>
             <li>Editorial Design</li>
             <li>Illustration</li>
             <li>Event Photography</li>
