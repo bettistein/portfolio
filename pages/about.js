@@ -25,7 +25,7 @@ const About = () => {
           </p>
 
           <p>
-            I´m always looking for new adventures & friends, so feel free to
+            I´m always looking for new adventures & friends, so feel free to 
             <a href="mailto:hi@bettystein.com">drop me a line</a>.
           </p>
         </div>
@@ -80,7 +80,7 @@ const About = () => {
             <li>Logo Design</li>
             <li>Visual Identity</li>
             <li>Responsive Webdesign</li>
-            <li>UI/UX for mobile Apps</li>
+            <li>UI/UX mobile Apps</li>
             <li>Editorial Design</li>
             <li>Illustration</li>
             <li>Event Photography</li>
