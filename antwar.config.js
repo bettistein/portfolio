@@ -1,11 +1,5 @@
 const path = require('path')
 const _ = require('lodash')
-const {workMdxes} = require('./data')
-
-const workPaths = workMdxes.reduce((acc, module) => {
-  acc[`work/${module.name}`] = () => workMdxPage(`${module.name}.mdx`)
-  return acc
-}, {})
 
 module.exports = {
   apiUrl: '',
@@ -18,10 +12,15 @@ module.exports = {
   renderPage: require('./utils/render-page'),
   output: 'build',
   layout: () => require('./layouts').default,
-  paths: Object.assign({}, workPaths, {
+  paths: {
     '/': () => require('./pages/frontpage').default,
-    about: () => require('./pages/about').default,
-  }),
+    'about': () => require('./pages/about').default,
+    'work/aigner': () => workMdxPage('aigner.mdx'),
+    'work/run-wild': () => workMdxPage('run-wild.mdx'),
+    'work/runtastic-webconcept': () => workMdxPage('runtastic-webconcept.mdx'),
+    'work/tictactoe': () => workMdxPage('tictactoe.mdx'),
+    'work/reason': () => workMdxPage('reason.mdx'),
+  },
 }
 
 function cleanBlogPath(resourcePath) {
@@ -55,5 +54,5 @@ function mdxPage(page) {
 
 function workMdxPage(name) {
   const page = require(`./pages/work/${name}`)
-  return mdxPage(page)
+  return mdxPage(page);
 }
