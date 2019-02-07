@@ -1,0 +1,27 @@
+/* -----
+FOOTER:
+------ */
+
+footer {
+    background-color: $beige;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 46px;
+    font-size: 14px;
+    //margin-top: 50px;
+    
+  
+    & li {
+      width: 300px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 10px 0 10px;
+      //background-color: red;
+      padding: 0;
+    }
+    }
+    

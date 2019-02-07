@@ -1,8 +1,27 @@
-# gatsby-starter-blog
-Gatsby starter for creating a blog
+# Portfolio
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-`gatsby new gatsby-blog https://github.com/gatsbyjs/gatsby-starter-blog`
+## How to use
 
-## Running in development
-`gatsby develop`
+**Install Project dependencies:**
+
+```
+npm install
+```
+
+**Start development:**
+
+```
+# Start server for development (open localhost:3000 after successful start)
+npm start
+
+# Build the website in production mode
+npm run build
+```
+
+## Deployment
+
+**Netlify:**
+
+- Add your project to netlify
+- Define following build task: `npm run netlify`
+- Define `build/`as your output folder

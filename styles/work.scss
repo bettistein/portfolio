@@ -1,0 +1,131 @@
+@import './moreprojects.scss';
+/*  -----
+
+LAYOUT FOR PROJECTS PAGES:
+
+------ */
+
+
+.work-layout {
+    & main {
+      max-width: 810px;
+      margin: 0 auto;
+    }
+
+    @media #{$screen-small} {
+        & main {
+            margin-bottom: 50px;
+            padding: 0 32px 0 32px;
+        }
+
+        @media #{$screen-xsmall} {
+            & main {
+                margin-bottom: 50px;
+                padding: 0 16px 0 16px;
+            }
+        }
+
+        
+}
+
+/* -----
+  CENTERED HEADER IMAGE:
+------ */
+
+    & .hero {
+        width: 92vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -46vw;
+        margin-right: -46vw;
+        // outline: 25px solid white;
+        //outline-offset: -25px;
+        margin-bottom: 50px;
+    } 
+
+    @media #{$screen-small} {
+        & .hero {
+            width: 100vw;
+            min-width: 100%;
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+            margin-bottom: 25px;
+        } 
+    }
+
+    @media #{$screen-wide} {
+        & .hero {
+            max-width: 1150px;
+            position: relative;
+            left: 0;
+            right: 0;
+            margin-right: 0;
+            margin-bottom: 25px;
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+
+
+/* -----
+TEXT AREA WITH SIDEBAR:
+(2-column-layout)
+------ */
+
+    .two-column-text {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+
+
+        & .mdxcomponent {
+            max-width: 520px;
+        }
+
+        & .sidebar {
+            font-size: 12px;
+            line-height: 1.5;
+
+            & > div > span {
+                font-weight: bold;
+            }
+
+        }
+    }
+
+    @media #{$screen-small} {
+        .two-column-text {
+            display: flex;
+            flex-direction: column;
+            //justify-content: space-between;
+            margin-bottom: 50px;
+
+
+            & .sidebar {
+                margin-bottom: 25px;
+    
+            }
+            & .mdxcomponent {
+                max-width: 520px;
+            }
+    }
+}
+
+/* -----
+PHOTO GALLERY:
+------ */
+
+    .gallery {
+
+      & img {
+        max-width: 100%;
+      }
+    }
+  }
+
+
