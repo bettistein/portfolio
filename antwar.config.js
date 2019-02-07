@@ -1,5 +1,11 @@
 const path = require('path')
 const _ = require('lodash')
+const {workMdxes} = require('./data')
+
+const workPaths = workMdxes.reduce((acc, module) => {
+  acc[`work/${module.name}`] = () => workMdxPage(`${module.name}.mdx`)
+  return acc
+}, {})
 
 module.exports = {
   apiUrl: '',
@@ -12,16 +18,10 @@ module.exports = {
   renderPage: require('./utils/render-page'),
   output: 'build',
   layout: () => require('./layouts').default,
-  paths: {
+  paths: Object.assign({}, workPaths, {
     '/': () => require('./pages/frontpage').default,
-    'about': () => require('./pages/about').default,
-    'work/aigner': () => mdxPage(require('./pages/work/aigner.mdx')),
-    'work/run-wild': () => mdxPage(require('./pages/work/run-wild.mdx')),
-    'work/runtastic-webconcept': () => mdxPage(require('./pages/work/runtastic-webconcept.mdx')),
-    'work/tictactoe': () => mdxPage(require('./pages/work/tictactoe.mdx')),
-    'work/reason': () => mdxPage(require('./pages/work/reason.mdx')),
-
-  },
+    about: () => require('./pages/about').default,
+  }),
 }
 
 function cleanBlogPath(resourcePath) {
@@ -51,4 +51,9 @@ function mdxPage(page) {
   ret.meta = page.meta || {title: frontMatter.title}
   ret.frontMatter = frontMatter
   return ret
+}
+
+function workMdxPage(name) {
+  const page = require(`./pages/work/${name}`)
+  return mdxPage(page)
 }
