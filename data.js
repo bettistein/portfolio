@@ -26,20 +26,9 @@ const importAllMdx = ctx => {
 
     module.frontMatter.href = href
     modules.push(module)
-    console.log(module)
   })
-  return applyMoreProjects(modules)
+  return sortByOrder(applyMoreProjects(modules))
 }
-
-/**
-
-AllWorkMdx = [
-  { name: "aigner", href: "/work/..."} <-- 0
-  { name: "run-wild", href: "/work/..."}
-  { name: "reason-association", href: "/work/..."}
-  { name: "reason-association", href: "/work/..."} Array.length-1
-]
- */
 
 /* This will add a moreProjects attribute to a given workMdx frontMatter */
 const applyMoreProjects = allWorkMdx => {
@@ -47,7 +36,7 @@ const applyMoreProjects = allWorkMdx => {
   if (maxSlots > 3) {
     maxSlots = 3
   }
-  
+
   allWorkMdx.map((workMdx, i) => {
     const slots = []
 
@@ -64,10 +53,10 @@ const applyMoreProjects = allWorkMdx => {
 
       // console.log("j: ", j)
 
-      const {thumbnail, sideinfo, href} = allWorkMdx[j].frontMatter;
+      const {thumbnail, sideinfo, href} = allWorkMdx[j].frontMatter
       slots.push({sideinfo, thumbnail, href})
     }
-    workMdx.frontMatter.moreProjects = slots;
+    workMdx.frontMatter.moreProjects = slots
   })
 
   return allWorkMdx
@@ -79,10 +68,36 @@ export const allFrontMatters = pages => {
     (acc, page) => {
       return [...acc, page.frontMatter]
     },
-    []
+    [],
   )
 }
 
-let workMdxes = importAllMdx(workMdxPaths)
+/* Sort by optional order attribute */
+export const sortByOrder = pages => {
+  return pages.sort((p1, p2) => {
+    const o1 = p1.frontMatter.order
+    const o2 = p2.frontMatter.order
+
+    if (o1 == null && o2 != null) {
+      return 1
+    }
+
+    if (o2 == null && o1 != null) {
+      return -1
+    }
+
+    if (o1 > o2) {
+      return -1
+    }
+
+    if (o1 < o2) {
+      return 1
+    }
+
+    return 0
+  })
+}
+
+export let workMdxes = importAllMdx(workMdxPaths)
 
 export const workFrontMatters = allFrontMatters(workMdxes)
