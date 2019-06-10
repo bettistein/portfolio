@@ -5,7 +5,7 @@ const Meta = ({
   siteName = 'Betty Stein',
   title = 'Betty Stein - Digital Design Studio for UX & Branding',
   description = 'Bettina Steinbrecher is an independent Visual Designer, based in Vienna, Austria. She specializes in UI and UX for Web and Mobile applications. Also Branding and Illustrations are part of my full-stack abilities.',
-  keywords = [Bettina Steinbrecher, Graphic, Designer, UI, UX, Illustration, Vienna, Runtastic, adidas, digital design],
+  keywords = ['Bettina Steinbrecher', 'Graphic', 'Designer', 'UI', 'UX', 'Illustration', 'Vienna', 'Runtastic', 'adidas', 'digital design'],
 }) => (
   <Helmet>
     <link rel="canonical" href="https://bettystein.com/" />
