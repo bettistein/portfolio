@@ -21,11 +21,11 @@ const About = () => {
           </p>
           <p>
             Previously I had a great time as Head of Brand Design with the
-            talented people from Runtastic.
+            talented people from Runtastic/adidas.
           </p>
 
           <p>
-            I´m always looking for new adventures & friends, so feel free to 
+            I´m always looking for new adventures and friends, so feel free to  
             <a href="mailto:hi@bettystein.com">drop me a line</a>.
           </p>
         </div>
