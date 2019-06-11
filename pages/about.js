@@ -25,8 +25,8 @@ const About = () => {
           </p>
 
           <p>
-            I´m always looking for new adventures and friends, so feel free to  
-            <a href="mailto:hi@bettystein.com">drop me a line</a>.
+            I´m always looking for new adventures and friends, so feel free to
+            <a href="mailto:hi@bettystein.com"> drop me a line</a>.
           </p>
         </div>
       </div>
