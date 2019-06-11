@@ -11,11 +11,11 @@ const About = () => {
         </div>
         <img id="photo-s" src={profilPhotoS} />
         <div className="text-wrapper">
-          <h2>Hey, I'm Betty and</h2>
+          <h2>Hi, I'm Betty</h2>
           <p>
             I am a Digital Designer based in Vienna, Austria.
             After working for several years as a full-stack designer, I
-            developed a passion for Branding, UI Design, and fun Illustrations.
+            developed a passion for UI Design, Branding, and fun Illustrations.
             I take the time to understand your strategy, stakeholders and
             audiences and bring my experience and insights to the table.
           </p>
