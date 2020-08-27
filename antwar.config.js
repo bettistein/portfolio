@@ -18,7 +18,6 @@ module.exports = {
     'work/aigner': () => workMdxPage('aigner.mdx'),
     'work/run-wild': () => workMdxPage('run-wild.mdx'),
     'work/runtastic-webconcept': () => workMdxPage('runtastic-webconcept.mdx'),
-    'work/tictactoe': () => workMdxPage('tictactoe.mdx'),
     'work/reason': () => workMdxPage('reason.mdx'),
   },
 }

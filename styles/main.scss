@@ -32,6 +32,12 @@ a:hover, a:active {
   text-decoration: underline;
 }
 
+.small-headline {
+  font-size: 13px;
+  letter-spacing: 0.2rem;
+  margin-bottom: 24px;
+
+}
 
 
 /* -----
@@ -48,7 +54,7 @@ Header:
   max-height: 800px;
 
   //the white outline:
-  background-color: $beige;
+  background-color: $light-blue;;
   outline: 25px solid #FDFDFD;
   outline-offset: -25px;
 
@@ -66,7 +72,6 @@ Header:
 
   }
 
-
   .headercontent {
     position: relative;
     padding-top: 38px;
@@ -79,11 +84,7 @@ Header:
 
 }
 
-.fp-flower {
-  position: absolute;
-  bottom: -10px;
-  right: 110px;
-}
+
 
 @media #{$screen-small} {
   .lpheader {
@@ -113,12 +114,6 @@ Header:
     }
   }
 }
-
-.fp-flower {
-  position: absolute;
-  bottom: 10px;
-  left: 60px;
-}
 }
 
 
@@ -132,7 +127,6 @@ Header:
     min-width: 320px;
 
     //the white outline:
-    background-color: $beige;
     outline: 16px solid #FDFDFD;
     outline-offset: -16px;
 
@@ -161,14 +155,42 @@ Header:
       }
     }
   }
-  .fp-flower {
-    position: absolute;
-    bottom: -5px;
-    left: 34px;
-  }
-
+  
  }
 
+/* -----
+SERVICES:
+------ */
+
+.service-wrapper {
+  margin: 0 auto;
+  max-width: 730px;
+  height:600px;
+  margin-top: 100px;
+  color: $primary-lighten-75;
+  padding:32px;
+}
+
+.service-item-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-item {
+  max-width: 300px;
+  margin-top: 25px;
+}
+
+.service-wrapper h2 {
+  color: #242527;
+}
+
+
+@media #{$screen-small} {
+  .service-item {
+    margin-right: 24px;
+  }
+}
 
 /* -----
 CONTENT AREA WITH CARDS:

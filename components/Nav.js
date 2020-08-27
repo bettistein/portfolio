@@ -8,9 +8,10 @@ const Nav = props => {
 
   
   return (
-    <nav>
+    <div className="nav-wrapper">
+   <nav>
       <span className="logo">
-        <a href="/">Betty Stein</a>
+        <a href="/">Bettina Steinbrecher</a>
       </span>
       <li>
         <ul>
@@ -25,6 +26,7 @@ const Nav = props => {
         </ul>
       </li>
     </nav>
+    </div>
   )
 }
 

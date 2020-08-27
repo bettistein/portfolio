@@ -1,14 +1,18 @@
 import React from 'react'
 import { workFrontMatters } from '../data'
-import fpFlower from '../assets/img/fp-flower.svg'
 import Footer from '../components/Footer'
+import IcWeb from '../assets/img/ic-web@2x.svg'
+import IcVisual from '../assets/img/ic-visual.svg'
+import IcApps from '../assets/img/ic-apps.svg'
+import IcIllus from '../assets/img/ic-illus.svg'
+
 
 const Header = props => {
   return (
     <div className="lpheader">
       <div className="lp-header-wrapper">
         <div className="nav-frontpage">
-          <span className="logo">  <a href="/">Betty Stein</a></span>
+          <span className="logo">  <a href="/">Bettina Steinbrecher</a></span>
           <li>
             <ul>
               <a href="#anchor"> Projects</a>
@@ -21,18 +25,49 @@ const Header = props => {
         <div className="headercontent">
           <h1>
             Visual Designer, passionately crafting identities and user
-            interfaces that showcases your personality & purpose.
+            interfaces that showcase your personality & purpose.
           </h1>
           <p>
-            I strategically help you design the visual identity or digital product  <br />
-            that resonates with your goals and values.
+          As an independent Designer, and working several years in that field, I strategically design your digital product that resonates with your goals and values.
           </p>
-        </div>
-        <div className="fp-flower">
-          <img src={fpFlower} />
         </div>
       </div>
     </div>
+  )
+}
+
+const Services = props => {
+  return (
+    <div className="service-wrapper">
+      <h2 className="small-headline">MY SERVICES:</h2>
+      <div className="service-item-wrapper">
+      <div className="service-item">
+      <img id="ic-service" src={IcWeb} />
+        <h2>Responsive web design</h2>
+        <p>A strategically and well crafted landingpage or website that is fast, 
+        responsive and easy to use, can make a difference in your business.</p>
+      </div>
+      <div className="service-item">
+      <img id="ic-service" src={IcVisual} />
+        <h2>Visual identity</h2>
+        <p>More than a logo – having a professional and consistent visual brand helps you to connenct with your audience sustainably.</p>
+      </div>
+      </div>
+      <div className="service-item-wrapper">
+      <div className="service-item">
+      <img id="ic-service" src={IcApps} />
+        <h2>Digital product design  </h2>
+        <p>UI/UX: Human centered apps are easy to use and fast to learn. Depending on your needs, I’m providing small app designs to whole design systems.</p>
+      </div>
+      <div className="service-item">
+      <img id="ic-service" src={IcIllus} />
+        <h2>Icons & illustrations</h2>
+        <p>Icons and illustrations support your content and are much faster to read than written words. They are also useful to explain abstract topics.</p>
+      </div>
+      </div>
+    </div>
+ 
+ 
   )
 }
 
@@ -53,6 +88,9 @@ const Frontpage = () => {
   return (
     <div>
       <Header />
+      <div>
+        <Services />
+      </div>
       <div id="anchor" className="content">
         {workFrontMatters.map((frontMatter, i) => {
           const { thumbnail, href, sideinfo } = frontMatter
@@ -73,8 +111,8 @@ const Frontpage = () => {
 
 Frontpage.meta = {
   title: 'Home',
-  description: 'Portfolio of Bettina Steinbrecher',
-  keywords: ['Design', 'Branding', 'UX'],
+  description: 'Design Portfolio of Digital Product and Visual Identity Designer Bettina Steinbrecher',
+  keywords: ['Design', 'Branding', 'UX','UI', 'adidas runtastic', 'ReScript', 'Bettina Steinbrecher', 'Bettina Ecker'],
 }
 
 export default Frontpage
