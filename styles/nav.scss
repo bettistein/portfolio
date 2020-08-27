@@ -1,9 +1,15 @@
+.nav-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
 nav{
     margin: 70px 0 24px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    max-width: 810px;
 
     & ul {
         padding-left: 25px;
@@ -62,7 +68,7 @@ MOBIL SIZE:
 
 @media #{$screen-xsmall} {
     nav {
-        padding: 45px 0 20px 0;
+        padding: 45px 16px 20px 16px;
         //max-width: 85vw;
         margin: 0 auto;
 
