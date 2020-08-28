@@ -24,11 +24,10 @@ const Header = props => {
         </div>
         <div className="headercontent">
           <h1>
-            Visual Designer, passionately crafting identities and user
-            interfaces that showcase your personality & purpose.
+            Working on visual identities and digital product designs that are useful and showcase your personality.
           </h1>
           <p>
-          As an independent Designer, and working several years in that field, I strategically design your digital product that resonates with your goals and values.
+          As an independent Designer, and working several years in that field, I strategically design your digital product that resonates with your goals and value.
           </p>
         </div>
       </div>

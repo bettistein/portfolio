@@ -12,21 +12,18 @@ const About = () => {
         </div>
         <img id="photo-s" src={profilPhotoS} />
         <div className="text-wrapper">
-          <h2>Hi I'm Bettina,</h2>
+          <h2> Bettina Steinbreher an independent designer of useful and beautiful things based in Vienna, Austria.</h2>
           <p>
-            a Digital freelance Designer based in Vienna, Austria.
-            After working for several years as a full-stack designer, I
-            developed a passion for UI/UX Design, Branding, and fun Illustrations.
+            By working for several years at adidas runtastic, I
+            specialized into digital product design and branding.</p>
+            <p>
+            Today I'm a freelance designer, creating for international brands as well as selected local start-ups and companies.
             I take the time to understand your strategy, stakeholders and
             audiences and bring my experience and insights to the table.
           </p>
           <p>
-            Previously I had a great time as Head of Brand Design with the
-            talented people from adidas runtastic.
-          </p>
-          <p>
-            I´m always looking for new adventures and friends, 
-            so feel free to <a href="mailto:hi@bettystein.com">drop me a line.</a>
+            I´m always looking for new project and friends, 
+            so feel free to <a href="mailto:hi@bettystein.com">send me a message.</a>
           </p>
         </div>
       </div>

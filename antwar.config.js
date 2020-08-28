@@ -19,6 +19,8 @@ module.exports = {
     'work/run-wild': () => workMdxPage('run-wild.mdx'),
     'work/runtastic-webconcept': () => workMdxPage('runtastic-webconcept.mdx'),
     'work/reason': () => workMdxPage('reason.mdx'),
+    'work/leiwand-kochen': () => workMdxPage('leiwand-kochen.mdx'),
+    'work/ocaml-sf': () => workMdxPage('ocaml-sf.mdx'),
   },
 }
 

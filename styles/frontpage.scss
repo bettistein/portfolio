@@ -1,0 +1,242 @@
+@import './variables.scss';
+
+/* -----
+
+FRONTPAGE DEFINITIONS:
+Header:
+------ */
+
+.lpheader {
+    position: relative;
+    margin: 0 auto;
+    height: 100vh;
+    min-height: 680px;
+    max-height: 800px;
+  
+    //the white outline:
+    background-color: $light-blue;;
+    outline: 25px solid #FDFDFD;
+    outline-offset: -25px;
+  
+    .lp-header-wrapper {
+      position: relative;
+      margin: 0 auto;
+      height: 95vh;
+      max-height: 800px;
+  
+      min-height: 680px;
+      max-width: 1100px;
+      padding-bottom: 50px;
+      padding-left: 112px;
+      padding-right: 100px;
+  
+    }
+  
+    .headercontent {
+      position: relative;
+      padding-top: 38px;
+      max-width: 780px;
+  
+      & > h1 {
+        margin-block-end: 0.45em;
+      }
+    }
+  
+  }
+  
+  
+  
+  @media #{$screen-small} {
+    .lpheader {
+      max-height: 768px;
+  
+    .lp-header-wrapper {
+      position: relative;
+      margin: 0 auto;
+  
+      height: 95vh;
+      max-height: 768px;
+      min-height: 640px;
+      max-width: 1100px;
+  
+      padding-bottom: 50px;
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+  
+    .headercontent {
+      position: relative;
+      padding-top: 18px;
+      max-width: 780px;
+  
+      & > h1 {
+        margin-block-end: 0.45em;
+      }
+    }
+  }
+  }
+  
+  
+  @media #{$screen-xsmall} {
+  
+    .lpheader {
+  
+      height: 90vh;
+      min-height: 550px;
+      max-height: 640px;
+      min-width: 320px;
+  
+      //the white outline:
+      outline: 16px solid #FDFDFD;
+      outline-offset: -16px;
+  
+      .lp-header-wrapper {
+        position: relative;
+        margin: 0 auto;
+        height: 85vh;
+        min-height: 580px;
+        //min-width: 320px;
+        padding-bottom: 50px;
+        max-height: 640px;
+  
+        padding-left: 34px;
+        padding-right: 34px;
+      }
+    
+      .headercontent {
+        position: relative;
+        padding-top: 16px;
+        max-width: 780px;
+        margin-right: 16px;
+  
+    
+        & > h1 {
+          margin-block-end: 0.45em;
+        }
+      }
+    }
+    
+   }
+  
+  /* -----
+  SERVICES:
+  ------ */
+  
+  .service-wrapper {
+    margin: 0 auto;
+    max-width: 730px;
+    margin-top: 100px;
+    color: $primary-lighten-75;
+    padding:32px;
+  }
+  
+  .service-item-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .service-item {
+    max-width: 300px;
+    margin-top: 25px;
+  }
+  
+  .service-wrapper h2 {
+    color: #242527;
+  }
+  
+  
+  @media #{$screen-small} {
+    .service-item {
+      margin-right: 24px;
+    }
+  }
+  
+  /* -----
+  CONTENT AREA WITH CARDS:
+  ------ */
+  
+  .content {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 900px;
+    margin-top: 90px;
+  
+    & .card {
+    position: relative;
+    max-width: 380px;
+    max-height: 503px;
+    margin: 20px;
+    margin-bottom: 120px;
+  
+    & > img {
+      max-width: 380px;
+    }
+  }
+  
+  .card:hover {
+    opacity: 0.9;
+    text-decoration: none;
+  }
+  
+  
+  .card-title {
+    font-size: 14px;
+    bottom: -25px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: 0;
+  }
+  
+  }
+  .card-projects {
+    font-family: "Apercu Italic";
+  }
+  
+  
+  
+  
+  @media #{$screen-xsmall} {
+    .content {
+    width: 85%;
+  
+      & .card {
+        margin-bottom: 70px;
+  }
+  
+    img {
+      width: 100%;
+    }
+   }
+  }
+  
+  
+  
+  
+  /* -----
+  FRONTPAGE NAVIGATION:
+  ------ */
+  
+  .nav-frontpage {
+    position: relative;
+    padding: 90px 0px 0px 0px;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+  
+    & ul {
+      padding-left: 25px;
+    }
+  }
+  
+  
+  @media #{$screen-xsmall} {
+    .nav-frontpage {
+      padding: 48px 0px 0px 0px;
+  }
+  }
