@@ -4,12 +4,12 @@
 }
 
 nav{
-    margin: 70px 0 24px 0;
+    margin: 24px 0 24px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 810px;
+    width: 1080px;
 
     & ul {
         padding-left: 25px;
@@ -17,28 +17,27 @@ nav{
 
       & a:hover {
         text-decoration: none;
-        border-bottom: 1px solid currentColor;
-        padding-bottom: 4px;
+        border-bottom: 1.3px solid currentColor;
+        padding-bottom: 3px;
     }
 
     &  .active  {
         text-decoration: none; 
-        border-bottom: 1px solid currentColor;
-        padding-bottom: 4px;
+        border-bottom: 1.3px solid currentColor;
+        padding-bottom: 3px;
         color: $primary-color;
-        opacity: 0.65;
+        opacity: 0.85;
     }
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 21px;
     font-weight: 400;
     letter-spacing: -0.03em;
 }
 .logo a:hover {
     border-bottom: 0px;
     color: $primary-color;
-    opacity: 0.45;
 }
 
 

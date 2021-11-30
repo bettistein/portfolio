@@ -5,6 +5,7 @@ import IcWeb from '../assets/img/ic-web@2x.svg'
 import IcVisual from '../assets/img/ic-visual.svg'
 import IcApps from '../assets/img/ic-apps.svg'
 import IcIllus from '../assets/img/ic-illus.svg'
+import logo from '../assets/img/betty_ecker_logo.svg'
 
 
 const Header = props => {
@@ -12,7 +13,7 @@ const Header = props => {
     <div className="lpheader">
       <div className="lp-header-wrapper">
         <div className="nav-frontpage">
-          <span className="logo">  <a href="/">Betty Ecker</a></span>
+          <span className="logo"><a href="/"><img id="logo" src={logo}/> </a></span>
           <li>
             <ul>
               <a href="#anchor"> Projects</a>

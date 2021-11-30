@@ -6,7 +6,7 @@ const Meta = ({
   siteName = 'Betty Ecker',
   title = 'Betty Ecker - Stand-out designs for driven Digital Brands | Brand Identity, Websites, Product Design',
   description = 'Betty Ecker is an independent Designer based in Vienna, Austria. She specializes in UI and UX for Web and Mobile applications. Also Branding and Illustrations are part of my full-stack abilities.',
-  keywords = ['Bettina Ecker', 'Graphic', 'Designer', 'UI', 'UX', 'Illustration', 'Vienna', 'Runtastic', 'adidas', 'digital design', 'ReScript'],
+  keywords = ['Bettina Ecker', 'Bettina Steinbrecher','Graphic', 'Designer', 'UI', 'UX', 'Illustration', 'Vienna', 'Runtastic', 'adidas', 'digital design', 'ReScript'],
 }) => (
   <Helmet>
     <link rel="canonical" href="https://bettyecker.at/" />

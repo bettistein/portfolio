@@ -9,12 +9,12 @@ Header:
 .lpheader {
     position: relative;
     margin: 0 auto;
-    height: 100vh;
+    height: 110vh;
     min-height: 680px;
     max-height: 800px;
   
     //the white outline:
-    background-color: $light-blue;;
+    background-color: $light-beige;;
     outline: 25px solid #FDFDFD;
     outline-offset: -25px;
   
@@ -34,7 +34,7 @@ Header:
   
     .headercontent {
       position: relative;
-      padding-top: 38px;
+      padding-top: 96px;
       max-width: 780px;
   
       & > h1 {
@@ -192,11 +192,10 @@ Header:
   
   }
   .card-projects {
-    font-family: "Apercu Italic";
+    font-family: "DMSans Italic";
   }
   
-  
-  
+
   
   @media #{$screen-xsmall} {
     .content {
@@ -221,7 +220,7 @@ Header:
   
   .nav-frontpage {
     position: relative;
-    padding: 90px 0px 0px 0px;
+    padding: 40px 0px 0px 0px;
   
     display: flex;
     justify-content: space-between;

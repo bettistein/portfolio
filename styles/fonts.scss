@@ -1,8 +1,8 @@
 @import './variables.scss';
 
 @font-face {
-    font-family: 'Apercu';
-    src: url('../assets/fonts/ApercuRegular.ttf');
+    font-family: 'DMSans';
+    src: url('../assets/fonts/DMSans-Regular.ttf');
   }
 
   @font-face {
@@ -11,8 +11,8 @@
   }
 
   @font-face {
-    font-family: 'Apercu Italic';
-    src: url('../assets/fonts/ApercuItalic.ttf');
+    font-family: 'DMSans Italic';
+    src: url('../assets/fonts/DMSans-Italic.ttf');
   }
 
 
@@ -22,7 +22,7 @@ body {
 }
 
 h1 {
-    font-size: 58px;
+    font-size: 60px;
     line-height: 1.25;
     font-weight: 400;
     letter-spacing: -0.1rem;

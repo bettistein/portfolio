@@ -5,7 +5,7 @@ OVERALL LAYOUT:
 ------ */
 
 .about-wrapper {
-    background-color:#F9F2EF;
+    background-color: $light-beige;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -19,7 +19,7 @@ display big image for wide devices
 ------ */
 
 .two-column-layout {
-    max-width: 910px;
+    max-width: 960px;
     display: flex;
     justify-content: space between;
     align-items: center;

@@ -1,4 +1,6 @@
 import React from 'react'
+import logo from '../assets/img/betty_ecker_logo.svg'
+
 
 const Nav = props => {
   const { pathname } = props
@@ -11,7 +13,8 @@ const Nav = props => {
     <div className="nav-wrapper">
    <nav>
       <span className="logo">
-        <a href="/">Betty Ecker</a>
+      <a href="/"><img id="logo" src={logo}/>
+        </a>
       </span>
       <li>
         <ul>

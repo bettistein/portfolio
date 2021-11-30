@@ -12,7 +12,7 @@ const About = () => {
         </div>
         <img id="photo-s" src={profilPhotoS} />
         <div className="text-wrapper">
-          <h2> Bettina Ecker an independent designer of useful and beautiful things based in Vienna, Austria.</h2>
+          <h2> Bettina Ecker, an independent designer of useful and beautiful things based in Vienna, Austria.</h2>
           <p>
             By working for several years at adidas runtastic, I
             specialized into digital product design and branding.</p>
@@ -22,8 +22,7 @@ const About = () => {
             audiences and bring my experience and insights to the table.
           </p>
           <p>
-            I´m always looking for new project and friends, 
-            so feel free to <a href="mailto:hi@bettystein.com">send me a message.</a>
+          For project inquiries and more information, get in touch at <a href="mailto:design@bettyecker.com">design@bettyecker.at</a>
           </p>
         </div>
       </div>
@@ -49,7 +48,7 @@ const About = () => {
           <h3>Social Media</h3>
           <ul>
             <li>
-              <a href="https://www.behance.net/bettystein" target="_blank">
+              <a href="https://www.behance.net/bettyecker" target="_blank">
                 Behance
               </a>
             </li>
@@ -59,20 +58,13 @@ const About = () => {
               </a>
             </li>
             <li>
-              <a href="https://dribbble.com/bbettyecker" target="_blank">
+              <a href="https://dribbble.com/bettyecker" target="_blank">
                 Dribbble
               </a>
             </li>
             <li>
               <a href="https://www.instagram.com/made.by.betty/" target="_blank">
                 Instagram
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/bettina-steinbrecher-b5249a159/"
-                target="_blank"
-              >LinkedIn
               </a>
             </li>
           </ul>
