@@ -11,7 +11,7 @@ const Nav = props => {
     <div className="nav-wrapper">
    <nav>
       <span className="logo">
-        <a href="/">Bettina Steinbrecher</a>
+        <a href="/">Betty Ecker</a>
       </span>
       <li>
         <ul>
