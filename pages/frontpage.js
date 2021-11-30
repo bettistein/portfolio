@@ -110,8 +110,8 @@ const Frontpage = () => {
 
 Frontpage.meta = {
   title: 'Home',
-  description: 'Design Portfolio of Digital Product and Visual Identity Designer Bettina Steinbrecher',
-  keywords: ['Design', 'Branding', 'UX','UI', 'adidas runtastic', 'ReScript', 'Bettina Steinbrecher', 'Bettina Ecker'],
+  description: 'Design Portfolio of Digital Product and Brand Designer Betty Ecker',
+  keywords: ['Design', 'Branding', 'UX','UI', 'adidas runtastic', 'ReScript', 'Betty Ecker', 'Bettina Ecker'],
 }
 
 export default Frontpage
