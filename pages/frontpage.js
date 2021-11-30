@@ -25,7 +25,7 @@ const Header = props => {
         </div>
         <div className="headercontent">
           <h1>
-            Working on visual identities and digital product designs that are useful and showcase your personality.
+            Working on brand identities and digital product designs that are useful and showcase your personality.
           </h1>
           <p>
           As an independent Designer, and working several years in that field, I strategically design your digital product that resonates with your goals and value.
