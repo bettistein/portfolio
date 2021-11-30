@@ -12,7 +12,7 @@ const About = () => {
         </div>
         <img id="photo-s" src={profilPhotoS} />
         <div className="text-wrapper">
-          <h2> Bettina Steinbreher an independent designer of useful and beautiful things based in Vienna, Austria.</h2>
+          <h2> Bettina Ecker an independent designer of useful and beautiful things based in Vienna, Austria.</h2>
           <p>
             By working for several years at adidas runtastic, I
             specialized into digital product design and branding.</p>
