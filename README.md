@@ -2,6 +2,12 @@
 
 ## How to use
 
+**Make sure to use a node version that uses npm v6:**
+
+```
+fnm use 12
+```
+
 **Install Project dependencies:**
 
 ```

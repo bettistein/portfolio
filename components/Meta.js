@@ -1,5 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import favicon from '../assets/img/favicon/Favicon.png'
 
 const Meta = ({
   siteName = 'Betty Ecker',
@@ -9,8 +10,7 @@ const Meta = ({
 }) => (
   <Helmet>
     <link rel="canonical" href="https://bettyecker.at/" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
-
+    <link rel="icon" href={favicon} type="image/png"/>
 
     <title>
       {siteName}
