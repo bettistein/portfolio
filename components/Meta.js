@@ -11,6 +11,7 @@ const Meta = ({
     <link rel="canonical" href="https://bettyecker.at/" />
     <link rel="icon" type="image/png" href="/favicon.png" />
 
+
     <title>
       {siteName}
       {title != '' ? '- ' + title : ''}
