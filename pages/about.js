@@ -59,7 +59,7 @@ const About = () => {
               </a>
             </li>
             <li>
-              <a href="https://dribbble.com/bettystein" target="_blank">
+              <a href="https://dribbble.com/bbettyecker" target="_blank">
                 Dribbble
               </a>
             </li>
@@ -100,7 +100,7 @@ const About = () => {
 About.meta = {
   title: 'About Betty Ecker',
   description: 'Portfolio of Betty Ecker',
-  keywords: ['Design', 'Grafik Design', 'Logos' 'Branding', 'UI/UX', 'Bettina Ecker', 'Betty Ecker', 'ReScript', 'Centiva', 'Runtastic adidas', 'Logo Design'],
+  keywords: ['Design', 'Grafik Design', 'Logos', 'Branding', 'UI/UX', 'Bettina Ecker', 'Betty Ecker', 'ReScript', 'Centiva', 'Runtastic adidas', 'Logo Design'],
 }
 
 export default About
