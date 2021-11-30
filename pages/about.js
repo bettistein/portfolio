@@ -98,9 +98,9 @@ const About = () => {
 }
 
 About.meta = {
-  title: 'About',
-  description: 'Portfolio of Bettina Steinbrecher',
-  keywords: ['Design', 'Branding', 'UI/UX', 'Bettina Steinbrecher', 'ReScript', 'Centiva', 'Runtastic adidas', 'Logo Design'],
+  title: 'About Betty Ecker',
+  description: 'Portfolio of Betty Ecker',
+  keywords: ['Design', 'Grafik Design', 'Logos' 'Branding', 'UI/UX', 'Bettina Ecker', 'Betty Ecker', 'ReScript', 'Centiva', 'Runtastic adidas', 'Logo Design'],
 }
 
 export default About
