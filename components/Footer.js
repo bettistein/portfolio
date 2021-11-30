@@ -5,7 +5,7 @@ const Footer = props => {
     <footer>
         <li>
           <ul>
-            <a href="/"> ©Bettina Steinbrecher 2020</a>
+            <a href="/"> ©Bettina Ecker 2022</a>
           </ul>
           <ul>
             <a href="/#anchor"> Projects</a>
