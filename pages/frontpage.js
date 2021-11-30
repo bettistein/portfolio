@@ -12,7 +12,7 @@ const Header = props => {
     <div className="lpheader">
       <div className="lp-header-wrapper">
         <div className="nav-frontpage">
-          <span className="logo">  <a href="/">Bettina Steinbrecher</a></span>
+          <span className="logo">  <a href="/">Betty Ecker</a></span>
           <li>
             <ul>
               <a href="#anchor"> Projects</a>
